@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package MutualAid
+ * @package ResilienceApp
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function mutualaid_jetpack_setup() {
+function resilienceapp_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'mutualaid_infinite_scroll_render',
+			'render'    => 'resilienceapp_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function mutualaid_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'mutualaid-style',
+				'stylesheet' => 'resilienceapp-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function mutualaid_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'mutualaid_jetpack_setup' );
+add_action( 'after_setup_theme', 'resilienceapp_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function mutualaid_infinite_scroll_render() {
+function resilienceapp_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

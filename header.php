@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package MutualAid
+ * @package ResilienceApp
  */
 
 ?>
@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mutualaid' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'resilienceapp' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -38,15 +38,15 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$mutualaid_description = get_bloginfo( 'description', 'display' );
-			if ( $mutualaid_description || is_customize_preview() ) :
+			$resilienceapp_description = get_bloginfo( 'description', 'display' );
+			if ( $resilienceapp_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $mutualaid_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<p class="site-description"><?php echo $resilienceapp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mutualaid' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'resilienceapp' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(

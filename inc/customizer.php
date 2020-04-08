@@ -1,8 +1,8 @@
 <?php
 /**
- * MutualAid Theme Customizer
+ * ResilienceApp Theme Customizer
  *
- * @package MutualAid
+ * @package ResilienceApp
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function mutualaid_customize_register( $wp_customize ) {
+function resilienceapp_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function mutualaid_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'mutualaid_customize_partial_blogname',
+				'render_callback' => 'resilienceapp_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'mutualaid_customize_partial_blogdescription',
+				'render_callback' => 'resilienceapp_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'mutualaid_customize_register' );
+add_action( 'customize_register', 'resilienceapp_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function mutualaid_customize_partial_blogname() {
+function resilienceapp_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function mutualaid_customize_partial_blogname() {
  *
  * @return void
  */
-function mutualaid_customize_partial_blogdescription() {
+function resilienceapp_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function mutualaid_customize_preview_js() {
-	wp_enqueue_script( 'mutualaid-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+function resilienceapp_customize_preview_js() {
+	wp_enqueue_script( 'resilienceapp-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'mutualaid_customize_preview_js' );
+add_action( 'customize_preview_init', 'resilienceapp_customize_preview_js' );

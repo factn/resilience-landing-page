@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package MutualAid
+ * @package ResilienceApp
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses mutualaid_header_style()
+ * @uses resilienceapp_header_style()
  */
-function mutualaid_custom_header_setup() {
+function resilienceapp_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'mutualaid_custom_header_args',
+			'resilienceapp_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'mutualaid_header_style',
+				'wp-head-callback'   => 'resilienceapp_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'mutualaid_custom_header_setup' );
+add_action( 'after_setup_theme', 'resilienceapp_custom_header_setup' );
 
-if ( ! function_exists( 'mutualaid_header_style' ) ) :
+if ( ! function_exists( 'resilienceapp_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see mutualaid_custom_header_setup().
+	 * @see resilienceapp_custom_header_setup().
 	 */
-	function mutualaid_header_style() {
+	function resilienceapp_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
