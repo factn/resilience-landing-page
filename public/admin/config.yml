@@ -1,10 +1,6 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
-    - editor
   branch: master
-
 media_folder: 'public/img'
 public_folder: 'img'
 
@@ -12,22 +8,20 @@ slug:
   encoding: 'ascii'
   clean_accents: true
   sanitize_replacement: '_'
-
 collections:
   - name: 'pages'
     label: 'Pages'
-    folder: 'content'
     files:
       - label: 'Home'
         name: 'home'
-        file: 'home.md'
+        file: 'content/home.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'About'
         name: 'about'
-        file: 'about.md'
+        file: 'content/about.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
