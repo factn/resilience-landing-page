@@ -4,7 +4,7 @@ backend:
     - admin
     - editor
   branch: master
-  
+
 media_folder: public/img
 public_folder: img
 
@@ -17,7 +17,6 @@ collections:
   - name: 'pages'
     label: 'Pages'
     folder: 'content/pages'
-    create: true # Allow users to create new documents in this collection
     files:
       - label: 'Home'
         name: 'home'
