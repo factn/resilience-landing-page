@@ -1,16 +1,22 @@
 backend:
   name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
+  
 media_folder: public/img
 public_folder: img
+
 slug:
   encoding: 'ascii'
   clean_accents: true
   sanitize_replacement: '_'
+
 collections:
   - name: 'pages'
     label: 'Pages'
-    folder: 'content/posts'
+    folder: 'content/pages'
     create: true # Allow users to create new documents in this collection
     files:
       - label: 'Home'
