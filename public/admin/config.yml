@@ -5,8 +5,8 @@ backend:
     - editor
   branch: master
 
-media_folder: 'public/img'
-public_folder: 'img'
+media_folder: '/public/img'
+public_folder: '/img'
 
 slug:
   encoding: 'ascii'
@@ -16,25 +16,25 @@ slug:
 collections:
   - name: 'pages'
     label: 'Pages'
-    folder: 'content'
+    folder: '/content'
     files:
       - label: 'Home'
         name: 'home'
-        file: 'content/home.md'
+        file: '/content/home.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'About'
         name: 'about'
-        file: 'content/about.md'
+        file: '/content/about.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Blog'
     name: 'blog'
-    folder: 'content/posts'
+    folder: '/content/posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
