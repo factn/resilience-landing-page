@@ -5,8 +5,8 @@ backend:
     - editor
   branch: master
 
-media_folder: public/img
-public_folder: img
+media_folder: "public/img"
+public_folder: "/img"
 
 slug:
   encoding: 'ascii'
