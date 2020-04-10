@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+$color-blue: #150E60;
+
 body {
   background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $color-blue;
 }
