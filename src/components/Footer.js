@@ -13,9 +13,9 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <img
+            className="siteLogo"
             src={logo}
             alt="Mutual Aid"
-            width="88"
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
@@ -73,7 +73,7 @@ const Footer = class extends React.Component {
                   <img
                     src={facebook}
                     alt="Facebook"
-                    width="50"
+                    width="30"
                   />
                 </a>
                 <a title="twitter" href="https://twitter.com">
@@ -81,21 +81,21 @@ const Footer = class extends React.Component {
                     className="fas fa-lg"
                     src={twitter}
                     alt="Twitter"
-                    width="50"
+                    width="30"
                   />
                 </a>
                 <a title="instagram" href="https://instagram.com">
                   <img
                     src={instagram}
                     alt="Instagram"
-                    width="50"
+                    width="30"
                   />
                 </a>
                 <a title="vimeo" href="https://vimeo.com">
                   <img
                     src={vimeo}
                     alt="Vimeo"
-                    width="50"
+                    width="30"
                   />
                 </a>
               </div>
