@@ -2,35 +2,56 @@ backend:
   name: git-gateway
   branch: master
 
-site_url: https://example.com
-
-publish_mode: editorial_workflow
 media_folder: public/img
 
-collections: # A list of collections the CMS should be able to edit
-  - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'Posts' # Used in the UI
-    label_singular: 'Post' # Used in the UI, ie: "New Post"
-    folder: '_posts'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
-          dateFormat: 'YYYY-MM-DD',
-          timeFormat: 'HH:mm',
-          format: 'YYYY-MM-DD HH:mm',
-        }
-      - label: 'Cover Image'
-        name: 'image'
-        widget: 'image'
-        required: false
-        tagname: ''
+# Publish mode
+publish_mode: editorial_workflow
 
-      - { editorComponents: ['youtube'], label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-    meta:
-      - { label: 'SEO Description', name: 'description', widget: 'text' }
+# Slug 
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '_'
+
+# Pages & collections (fields) 
+collections:
+# Pages
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'Home'
+        name: 'home'
+        file: 'content/home.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - {
+              label: 'Featured Image',
+              name: 'thumbnail',
+              widget: 'image',
+              default: '/uploads/chocolate-dogecoin.jpg',
+              media_library:
+                config:
+                  multiple: true
+             }
+      
+      - label: 'About'
+        name: 'about'
+        file: 'content/about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+# Blog
+  - label: 'Blog'
+    name: 'blog'
+    folder: 'content/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
