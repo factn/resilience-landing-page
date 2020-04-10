@@ -26,16 +26,6 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-          - {
-              label: 'Featured Image',
-              name: 'thumbnail',
-              widget: 'image',
-              default: '/uploads/chocolate-dogecoin.jpg',
-              media_library:
-                config:
-                  multiple: true
-             }
-      
       - label: 'About'
         name: 'about'
         file: 'content/about.md'
