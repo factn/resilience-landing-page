@@ -35,15 +35,17 @@ contribute:
   text: |
     Get involved paragraph
   channel:
-    - image: /img/coffee.png
-      heading: Channel heading
-      text: |
-        Channel text
-      button: Button text
-      url: Button url
+    - image: /img/products-grid1.jpg
+      heading: Slack
+      text: Channel text (updated)
+      button: Button text (updated)
+      url: "#"
 team:
   heading: Team heading
-  text: |
-    Team paragraph
-  member: []
+  text: Team paragraph (updated)
+  member:
+    - image: /img/woman-shopping.jpg
+      heading: Sarah
+      button: Button?
+      url: url?
 ---
