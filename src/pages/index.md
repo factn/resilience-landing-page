@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  title: We’re making it safe and easy for communities to provide local aid.
+  title: We’re making it safe and easy for communities to provide local aid
   button:
     - label: Button label
       url: http://example.com
