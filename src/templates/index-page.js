@@ -79,8 +79,8 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const pageQuery = graphql`
-query IndexPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "index-page" } }) {
+query IndexPageQuery {
+  markdownRemark {
     frontmatter {
       hero {
         title
@@ -92,46 +92,36 @@ query IndexPageTemplate {
       mission {
         step {
           image {
-            childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-            }
+            absolutePath
           }
-        }
-        text
+          heading
         }
       }
       video {
+        title
         url
       }
       section {
         row {
           image {
-            childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-            }
+            absolutePath
           }
-        }
-        heading
-        text
+          heading
+          text
+          button
+          url
         }
       }
       contribute {
         heading
-        text
         channel {
           image {
-            childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-            }
+            absolutePath
           }
-        }
-        heading
-        text
-        button
-        url
+          heading
+          text
+          button
+          url
         }
       }
       team {
@@ -139,15 +129,12 @@ query IndexPageTemplate {
         text
         member {
           image {
-            childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-            }
+            absolutePath
           }
-        }
-        heading
+          heading
         }
       }
+      templateKey
     }
   }
 }
