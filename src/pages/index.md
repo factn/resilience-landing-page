@@ -7,7 +7,7 @@ mission:
   step: []
 video:
   title: Test
-  url: "#"
+  url: http://
 section:
   row: []
 contribute:
