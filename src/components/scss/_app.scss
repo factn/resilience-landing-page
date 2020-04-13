@@ -1,0 +1,14 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  line-height: 1.75;
+  padding: 0;
+  margin: 0;
+}
