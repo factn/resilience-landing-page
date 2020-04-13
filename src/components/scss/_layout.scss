@@ -1,9 +1,22 @@
-nav,
-main,
-footer {
-  padding: 1rem;
+section {
+  padding: 4rem 2rem;
 }
 
-.featured-block {
+.sectionBlock {
+  display: flex;
+  margin: 0 auto;
+  max-width: $max-width;
+  &:nth-child(2n){
+    flex-direction: row-reverse;
+  }
+
+  .sectionBlock-content,
+  .gatsby-image-wrapper {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+.featuredBlock-wrapper {
   background-image: linear-gradient($color-sky 70%, white 30%);
 }
