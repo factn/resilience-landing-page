@@ -1,49 +1,49 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Mission from '../components/Mission'
+import Section from '../components/Section'
+import Contribute from '../components/Contribute'
+import Team from '../components/Team'
 
 export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
+  hero,
+  video,
+  mission,
+  section,
+  contribute,
+  team
 }) => (
     <Fragment>
       <header className="siteHero">
-        <h1>{title}</h1>
-        <h2>{subheading}</h2>
+        <h1>{hero.title}</h1>
       </header>
-
-      <section>
-        <h1 className="title">{mainpitch.title}</h1>
-        <h3 className="subtitle">{mainpitch.description}</h3>
-        <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-        <p>{description}</p>
-      </section>
-
-      <Features gridItems={intro.blurbs} />
-      <h3>Latest stories</h3>
-      <BlogRoll />
-      <Link className="btn" to="/blog">Read more</Link>
+      {video.url}
+      <Mission step={mission.step} />
+      <Section row={section.row} />
+      <Contribute channel={contribute.channel} />
+      <Team member={team.member} />
     </Fragment >
   )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  hero: PropTypes.shape({
+    button: PropTypes.array,
+  }),
+  mission: PropTypes.shape({
+    step: PropTypes.array,
+  }),
+  video: PropTypes.string,
+  section: PropTypes.shape({
+    row: PropTypes.array,
+  }),
+  contribute: PropTypes.shape({
+    channel: PropTypes.array,
+  }),
+  team: PropTypes.shape({
+    member: PropTypes.array,
   }),
 }
 
@@ -53,13 +53,12 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        hero={frontmatter.hero}
+        mission={frontmatter.mission}
+        video={frontmatter.video}
+        section={frontmatter.section}
+        contribute={frontmatter.contribute}
+        team={frontmatter.team}
       />
     </Layout>
   )
@@ -76,39 +75,72 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-        markdownRemark(frontmatter: {templateKey: {eq: "index-page" } }) {
-        frontmatter {
+query IndexPageTemplate {
+  markdownRemark(frontmatter: {templateKey: {eq: "index-page" } }) {
+    frontmatter {
+      hero {
         title
-        image {
-        childImageSharp {
-        fluid(maxWidth: 2048, quality: 100) {
-        ...GatsbyImageSharpFluid
       }
+      mission {
+        step {
+          image {
+            childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        text
+        }
+      }
+      video {
+        url
+      }
+      section {
+        row {
+          image {
+            childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        heading
+        text
+        }
+      }
+      contribute {
+        heading
+        text
+        channel {
+          image {
+            childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        heading
+        text
+        button
+        url
+        }
+      }
+      team {
+        heading
+        text
+        member {
+          image {
+            childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        name
+        }
       }
     }
-    heading
-    subheading
-        mainpitch {
-        title
-          description
-    }
-    description
-        intro {
-        blurbs {
-        image {
-        childImageSharp {
-        fluid(maxWidth: 240, quality: 64) {
-        ...GatsbyImageSharpFluid
-      }
-      }
-    }
-    text
   }
-  heading
-  description
-}
-}
-}
 }
 `
