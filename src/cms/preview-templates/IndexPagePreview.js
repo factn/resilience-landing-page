@@ -8,7 +8,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <IndexPageTemplate
-        title={data.title}
         mission={data.mission || { step: [] }}
         section={data.section || { row: [] }}
         contribute={data.contribute || { channel: [] }}

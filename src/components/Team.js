@@ -8,7 +8,7 @@ const Team = ({ member }) => (
       {member.map(item => (
         <div key={item.text}>
           <PreviewCompatibleImage imageInfo={item} />
-          {item.name}
+          {item.heading}
         </div>
       ))}
     </div>
@@ -21,7 +21,7 @@ Team.propTypes = {
   member: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      name: PropTypes.string,
+      heading: PropTypes.string,
     })
   ),
 }

@@ -36,12 +36,12 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Hero, name: hero, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Buttons, name: buttons, widget: list, fields: [{label: Label, name: label, widget: string}, {label: URL, name: url, widget: string}]}]}
-          - {label: Mission, name: mission, widget: object, fields: [{label: Steps, name: step, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Video, name: video, widget: string}
-          - {label: Sections, name: section, widget: object, fields: [{label: Row, name: row, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}]}
-          - {label: Contribute, name: contribute, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Channel, name: channel, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Button, name: button, widget: string}, {label: URL, name: url, widget: string}]}]}
-          - {label: Team, name: team, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Member, name: member, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Button, name: button, widget: string}, {label: URL, name: url, widget: string}]}]}
+          - {label: Hero, name: hero, widget: object, fields: [{label: Title, name: title, widget: string, required: true}, {label: Button, name: button, widget: list, fields: [{label: Label, name: label, widget: string, required: true}, {label: URL, name: url, widget: string, required: true}]}]}
+          - {label: Mission, name: mission, widget: object, fields: [{label: Steps, name: step, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Text, name: text, widget: text, required: true}]}]}
+          - {label: Video, name: video, widget: object, fields: [{label: Title, name: title, widget: string, required: true}, {label: URL, name: url, widget: string, required: true}]}
+          - {label: Sections, name: section, widget: object, fields: [{label: Row, name: row, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Heading, name: heading, widget: string, required: true}, {label: Text, name: text, widget: text, required: true}]}]}
+          - {label: Contribute, name: contribute, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Channel, name: channel, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Button, name: button, widget: string}, {label: URL, name: url, widget: string}]}]}
+          - {label: Team, name: team, widget: object, fields: [{label: Heading, name: heading, widget: string, required: true}, {label: Text, name: text, widget: text, required: true}, {label: Member, name: member, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Heading, name: heading, widget: string, required: true}]}]}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

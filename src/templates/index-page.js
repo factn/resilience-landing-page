@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 import Mission from '../components/Mission'
+import Video from '../components/Video'
 import Section from '../components/Section'
 import Contribute from '../components/Contribute'
 import Team from '../components/Team'
@@ -17,11 +19,9 @@ export const IndexPageTemplate = ({
   team
 }) => (
     <Fragment>
-      <header className="siteHero">
-        <h1>{hero.title}</h1>
-      </header>
-      {video.url}
+      <Hero title={hero.title} button={hero.button} />
       <Mission step={mission.step} />
+      <Video title={video.title} url={video.url} />
       <Section row={section.row} />
       <Contribute channel={contribute.channel} />
       <Team member={team.member} />
@@ -30,12 +30,16 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   hero: PropTypes.shape({
+    title: PropTypes.string,
     button: PropTypes.array,
   }),
   mission: PropTypes.shape({
     step: PropTypes.array,
   }),
-  video: PropTypes.string,
+  video: PropTypes.shape({
+    title: PropTypes.string,
+    url: PropTypes.string,
+  }),
   section: PropTypes.shape({
     row: PropTypes.array,
   }),
@@ -80,6 +84,10 @@ query IndexPageTemplate {
     frontmatter {
       hero {
         title
+        button {
+          label
+          url
+        }
       }
       mission {
         step {
@@ -137,7 +145,7 @@ query IndexPageTemplate {
             }
           }
         }
-        name
+        heading
         }
       }
     }
