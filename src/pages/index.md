@@ -1,43 +1,39 @@
 ---
 templateKey: index-page
 hero:
-  title: We're making it safe and easy...
+  title: We’re making it safe and easy for communities to provide local aid
   button:
-  - label: Button label
-    url: Button URL
+  - label: I Need Help
+    url: http://example.com
+  - label: I want to Volunteer
+    url: http://example.com
 mission:
   step:
   - image: ../img/placeholder.png
-    text: >
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a
-      variety of coffee beans grown with great care for the environment and
-      local communities. Check our post or contact us directly for current
-      availability.
+    heading: We're giving people free digital tools
   - image: ../img/placeholder.png
-    text: >
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a
-      variety of coffee beans grown with great care for the environment and
-      local communities. Check our post or contact us directly for current
-      availability.
+    heading: So it’s easier and safer to deliver food and aid
+  - image: ../img/placeholder.png
+    heading: To those who need it during the Covid-19 crisis
 video:
-  title: Video title
-  url: https://www.youtube.com/embed/NpEaa2P7qZI
+  title: CoronaDonor.org Introduction
+  url: https://www.youtube.com/embed/ia7h5sRIe5U
 section:
   row:
   - image: ../img/placeholder.png
-    heading: Section heading
+    heading: Need help?
     text: >
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a
-      variety of coffee beans grown with great care for the environment and
-      local communities. Check our post or contact us directly for current
-      availability.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    button: I Need Help
+    url: https://example.com
+  - image: ../img/placeholder.png
+    heading: Volunteers needed
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    button: I want to Volunteer
+    url: https://example.com
 contribute:
-  heading: Get involved
-  text: > 
-    Get involved paragraph
+  heading: Other ways to get get involved
   channel:
   - image: ../img/placeholder.png
     heading: Channel heading
@@ -46,10 +42,18 @@ contribute:
     button: Button label
     url: Button URL
 team:
-  heading: Team heading
+  heading: Meet the Team
   text: > 
-    Team paragraph
+    MutualAid.world is a grassroots crisis response project. We’re a global community of developers, designers, project managers, lawyers, data scientists, strategists, writers, and translators creating apps to help people help each other
   member:
   - image: ../img/placeholder.png
-    heading: Gareth
+    heading: Krishna
+  - image: ../img/placeholder.png
+    heading: Krishna
+  - image: ../img/placeholder.png
+    heading: Krishna
+  - image: ../img/placeholder.png
+    heading: Krishna
+  - image: ../img/placeholder.png
+    heading: Krishna
 ---

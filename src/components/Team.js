@@ -6,7 +6,7 @@ const Team = ({ member }) => (
   <section>
     <div className="grid">
       {member.map(item => (
-        <div key={item.text}>
+        <div key={item.heading}>
           <PreviewCompatibleImage imageInfo={item} />
           {item.heading}
         </div>
@@ -16,8 +16,6 @@ const Team = ({ member }) => (
 )
 
 Team.propTypes = {
-  heading: PropTypes.string,
-  text: PropTypes.string,
   member: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

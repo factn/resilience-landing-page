@@ -1,25 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const Mission = ({ step }) => (
-  <div className="columns is-multiline">
+  <section>
     {step.map(item => (
-      <div key={item.text} className="column is-6">
-        <section className="section">
-          <PreviewCompatibleImage imageInfo={item} />
-          <p>{item.text}</p>
-        </section>
+      <div key={item.heading}>
+        <img alt={item.heading} src={item.image} />
+        <p>{item.heading}</p>
       </div>
     ))}
-  </div>
+  </section>
 )
 
 Mission.propTypes = {
   step: PropTypes.arrayOf(
     PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
+      image: PropTypes.string,
+      heading: PropTypes.string,
     })
   ),
 }

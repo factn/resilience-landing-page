@@ -3,13 +3,15 @@ import PropTypes from 'prop-types'
 
 const Hero = ({ title, button }) => (
   <header className="siteHero">
-    <h1>{title}</h1>
-    <div className="siteHero-button-wrapper">
-      {button.map(item => (
-        <a href={item.url} className="siteHero-button">
-          {item.label}
-        </a>
-      ))}
+    <div className="siteHero-content">
+      <h1>{title}</h1>
+      <div className="buttons-wrapper">
+        {button.map(item => (
+          <a href={item.url} className="button primary">
+            {item.label}
+          </a>
+        ))}
+      </div>
     </div>
   </header>
 )

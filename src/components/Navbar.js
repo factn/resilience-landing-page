@@ -33,7 +33,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <header role="banner">
+      <header role="banner" className="siteHeader">
         <Link to="/" className="navbar-item" title="Mutual Aid homepage">
           <img className="siteLogo" src={logo} alt="Mutual Aid" />
         </Link>
@@ -50,6 +50,7 @@ const Navbar = class extends React.Component {
           <Link className="siteNav-item" to="/blog">Blog</Link>
           <Link className="siteNav-item" to="/contact">Contact</Link>
           <Link className="siteNav-item" to="/contact/examples">Form Examples</Link>
+          <Link className="siteNav-item button" to="https://example.com">Get the App</Link>
         </nav>
         {/* </div> */}
       </header >
