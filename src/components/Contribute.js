@@ -12,7 +12,7 @@ const Contribute = ({ channel, heading }) => (
             <PreviewCompatibleImage imageInfo={item} />
             <h2>{item.heading}</h2>
             <p>{item.text}</p>
-            <a href={item.url}>{item.button}</a>
+            <a className="button tertiary" href={item.url}>{item.button}</a>
           </div>
         ))}
       </div>

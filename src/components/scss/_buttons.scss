@@ -4,7 +4,7 @@ a {
 
 .button {
   background-color: $color-grey;
-  border-radius: 5px;
+  border-radius: 4px;
   color: black;
   display: inline-block;
   font-weight: 600;
@@ -25,4 +25,10 @@ a {
 
 .button.secondary {
   background-color: $color-lilac;
+}
+
+.button.tertiary {
+  background-color: white;
+  border: 2px solid $color-vibrant-purple;
+  color: $color-vibrant-purple
 }
