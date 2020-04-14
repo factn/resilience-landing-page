@@ -36,7 +36,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "clean": "gatsby clean",
+    "clean": "rm -rf .cache/* && gatsby clean",
     "start": "npm run develop",
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
