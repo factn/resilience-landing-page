@@ -29,6 +29,11 @@ Start the server
 $ npm start
 ```
 
+# GraphQL
+
+(http://localhost:8000/__graphql)
+
+
 **Note:** This theme uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/) and [Netlify CMS](https://www.netlifycms.org)
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
