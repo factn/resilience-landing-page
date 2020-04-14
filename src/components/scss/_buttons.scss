@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .button {
   background-color: $color-grey;
   border-radius: 5px;
@@ -8,7 +12,6 @@
   margin-right: .5rem;
   margin-top: .25rem;
   padding: .5rem 3rem;
-  text-decoration: none;
 }
 
 .button + .button {

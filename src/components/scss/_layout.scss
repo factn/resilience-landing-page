@@ -1,3 +1,12 @@
+.siteContent {
+  max-width: $max-width / 1.5;
+  margin: 0 auto;
+}
+
+.siteMission {
+  display: flex;
+}
+
 section {
   padding: 4rem 2rem;
 }
