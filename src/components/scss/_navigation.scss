@@ -2,5 +2,7 @@
   color: black;
   font-weight: 600;
   text-decoration: none;
-  margin-right: 2rem;
+  &:not(:last-of-type) {
+    margin-right: 2rem;
+  }
 }

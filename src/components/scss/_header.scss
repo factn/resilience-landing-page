@@ -1,8 +1,13 @@
 .siteHeader {
   align-items: center;
+  background-color: white;
+  box-shadow: $box-shadow;
   display: flex;
-  padding: 2rem;
   justify-content: space-between;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .siteLogo-wrapper {
