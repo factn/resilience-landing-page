@@ -6,8 +6,8 @@ const Hero = ({ title, button }) => (
     <div className="siteHero-content">
       <h1>{title}</h1>
       <div className="buttons-wrapper">
-        {button.map(item => (
-          <a href={item.url} className="button primary">
+        {button.map((item, i) => (
+          <a href={item.url} key={i} className="button primary">
             {item.label}
           </a>
         ))}

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Contribute = ({ channel }) => (
-  <section>
-    {channel.map(item => (
-      <div className="cardItem" key={item.text}>
+  <section className="featuredBlock-wrapper">
+    {channel.map((item, i) => (
+      <div className="cardItem" key={i}>
         <PreviewCompatibleImage imageInfo={item} />
         <h2>{item.heading}</h2>
         <p>{item.text}</p>

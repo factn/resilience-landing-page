@@ -2,20 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-const Team = ({ member }) => (
+const Team = ({ heading, text, member }) => (
   <section>
-    <div className="grid">
-      {member.map(item => (
-        <div key={item.heading}>
-          <PreviewCompatibleImage imageInfo={item} />
-          {item.heading}
-        </div>
-      ))}
+    <div className="gridBlock-wrapper">
+      <h1>{heading}</h1>
+      <p>{text}</p>
+      <div className="gridBlock">
+        {member.map((item, i) => (
+          <div key={i}>
+            <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 )
 
 Team.propTypes = {
+  heading: PropTypes.string,
+  text: PropTypes.string,
   member: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

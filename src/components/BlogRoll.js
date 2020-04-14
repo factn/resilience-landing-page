@@ -9,15 +9,11 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <ul className="blogList">
         {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+          posts.map(({ node: post, i }) => (
+            <li className="blogList-item">
+              <article key={i} className={`blogItem ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}>
                 <header>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
@@ -29,31 +25,22 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
+                  <div className="post-content">
+                    <Link to={post.fields.slug}>
+                      <h2>{post.frontmatter.title}</h2>
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <span>
                       {post.frontmatter.date}
                     </span>
-                  </p>
+                  </div>
                 </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                <p>{post.excerpt}</p>
+                <Link className="button secondary" to={post.fields.slug}>Keep Reading</Link>
               </article>
-            </div>
-          ))}
-      </div>
+            </li>
+          ))
+        }
+      </ul>
     )
   }
 }
