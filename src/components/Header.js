@@ -50,7 +50,7 @@ const Header = class extends React.Component {
           <Link className="siteNav-item" to="/blog">Blog</Link>
           <Link className="siteNav-item" to="/contact">Contact</Link>
           <Link className="siteNav-item" to="/contact/examples">Form Examples</Link>
-          <Link className="siteNav-item button" to="https://example.com">Get the App</Link>
+          <Link className="siteNav-item button" to="/">Get the App</Link>
         </nav>
         {/* </div> */}
       </header >
