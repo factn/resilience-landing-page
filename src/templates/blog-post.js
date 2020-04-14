@@ -18,24 +18,26 @@ export const BlogPostTemplate = ({
 
   return (
     <div className="siteContent">
-      {helmet || ''}
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <PostContent content={content} />
+      <div className="siteContent-inner">
+        {helmet || ''}
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <PostContent content={content} />
 
-      {tags && tags.length ? (
-        <div className="tagList-wrapper">
-          <h4>Tags</h4>
-          <ul className="taglist">
-            {tags.map(tag => (
-              <li key={tag + `tag`}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+        {tags && tags.length ? (
+          <div className="tagList-wrapper">
+            <h4>Tags</h4>
+            <ul className="taglist">
+              {tags.map(tag => (
+                <li key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
+      </div>
     </div>
   )
 }

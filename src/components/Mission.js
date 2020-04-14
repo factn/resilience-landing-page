@@ -3,13 +3,17 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Mission = ({ step }) => (
-  <section className="siteMission">
-    {step.map((item, i) => (
-      <div key={i}>
-        <p>{item.heading}</p>
-        <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
+  <section>
+    <div className="siteContent-inner">
+      <div className="siteMission">
+        {step.map((item, i) => (
+          <div key={i}>
+            <p>{item.heading}</p>
+            <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
+          </div>
+        ))}
       </div>
-    ))}
+    </div>
   </section>
 )
 

@@ -9,8 +9,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div className="siteContent">
-      <h1>{title}</h1>
-      <PageContent className="content" content={content} />
+      <div className="siteContent-inner">
+        <h1>{title}</h1>
+        <PageContent className="content" content={content} />
+      </div>
     </div>
   )
 }
@@ -43,11 +45,11 @@ export default AboutPage
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+        markdownRemark(id: {eq: $id }) {
+        html
       frontmatter {
         title
       }
+      }
     }
-  }
-`
+  `

@@ -4,17 +4,21 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const Section = ({ row }) => (
   <Fragment>
-    {row.map((item, i) => (
-      <section key={i} className="sectionBlock">
-        <div className="sectionBlock-content">
-          <h1>{item.heading}</h1>
-          <p>{item.text}</p>
-          <a className="button primary" href={item.url}>{item.button}</a>
-        </div>
-        <PreviewCompatibleImage imageInfo={item} />
-      </section>
-    ))
-    }
+    <section>
+      <div class="siteContent-inner">
+        {row.map((item, i) => (
+          <div className="sectionBlock" key={i}>
+            <div className="sectionBlock-content">
+              <h1>{item.heading}</h1>
+              <p>{item.text}</p>
+              <a className="button primary" href={item.url}>{item.button}</a>
+            </div>
+            <PreviewCompatibleImage imageInfo={item} />
+          </div>
+        ))
+        }
+      </div>
+    </section>
   </Fragment >
 )
 

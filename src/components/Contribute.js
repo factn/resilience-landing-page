@@ -2,16 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-const Contribute = ({ channel }) => (
+const Contribute = ({ channel, heading }) => (
   <section className="featuredBlock-wrapper">
-    {channel.map((item, i) => (
-      <div className="cardItem" key={i}>
-        <PreviewCompatibleImage imageInfo={item} />
-        <h2>{item.heading}</h2>
-        <p>{item.text}</p>
-        <a href={item.url}>{item.button}</a>
+    <div class="siteContent">
+      <div class="siteContent-inner">
+        <h1>{heading}</h1>
+        {channel.map((item, i) => (
+          <div className="cardItem" key={i}>
+            <PreviewCompatibleImage imageInfo={item} />
+            <h2>{item.heading}</h2>
+            <p>{item.text}</p>
+            <a href={item.url}>{item.button}</a>
+          </div>
+        ))}
       </div>
-    ))}
+    </div>
   </section>
 )
 

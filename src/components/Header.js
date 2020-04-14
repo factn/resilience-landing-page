@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/svg-logo.svg'
+import logo from '../img/svg-logo-text.svg'
 
-const Navbar = class extends React.Component {
+const Header = class extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -34,8 +34,8 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <header role="banner" className="siteHeader">
-        <Link to="/" className="navbar-item" title="Mutual Aid homepage">
-          <img className="siteLogo" src={logo} alt="Mutual Aid" />
+        <Link to="/" title="Mutual Aid homepage" className="siteLogo-wrapper">
+          <img className="siteLogo" src={logo} alt="MutualAid.world, global community, local aid" />
         </Link>
 
         {/* Hamburger menu */}
@@ -58,4 +58,4 @@ const Navbar = class extends React.Component {
   }
 }
 
-export default Navbar
+export default Header

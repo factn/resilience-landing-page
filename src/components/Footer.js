@@ -12,12 +12,6 @@ const Footer = class extends React.Component {
     return (
       <footer className="siteFooter">
 
-        <img
-          className="siteLogo"
-          src={logo}
-          alt="Mutual Aid"
-        />
-
         <nav className="siteNav siteFooter-nav">
           <Link to="/" className="navbar-item">Home</Link>
           <Link className="navbar-item" to="/about">About</Link>
@@ -26,7 +20,7 @@ const Footer = class extends React.Component {
           <Link className="navbar-item" to="/contact">Contact</Link>
         </nav>
 
-        <a title="facebook" href="https://facebook.com">
+        {/* <a title="facebook" href="https://facebook.com">
           <img
             src={facebook}
             alt="Facebook"
@@ -54,7 +48,7 @@ const Footer = class extends React.Component {
             alt="Vimeo"
             width="30"
           />
-        </a>
+        </a> */}
       </footer >
     )
   }

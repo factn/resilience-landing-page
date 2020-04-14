@@ -8,8 +8,10 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div className="siteContent">
-          <h1>Blog</h1>
-          <BlogRoll />
+          <div className="siteContent-inner">
+            <h1>Blog</h1>
+            <BlogRoll />
+          </div>
         </div>
       </Layout>
     )

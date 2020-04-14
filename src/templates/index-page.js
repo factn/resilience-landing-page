@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
       <Mission step={mission.step} />
       <Video title={video.title} url={video.url} />
       <Section row={section.row} />
-      <Contribute channel={contribute.channel} />
+      <Contribute heading={contribute.heading} channel={contribute.channel} />
       <Team heading={team.heading} text={team.text} member={team.member} />
     </Fragment >
   )
