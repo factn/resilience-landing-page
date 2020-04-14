@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: factn/resilienceapp_theme
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
