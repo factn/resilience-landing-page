@@ -1,6 +1,13 @@
-.grid {
+.gridBlock-wrapper {
+  max-width: $max-width / 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gridBlock {
   display: grid;
   grid-gap: 0.5rem;
+  margin: 2rem 0;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   grid-auto-rows: minmax(180px, auto);
 }
