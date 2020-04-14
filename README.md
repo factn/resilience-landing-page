@@ -29,7 +29,7 @@ Start the server
 $ npm start
 ```
 
-# GraphQL
+## GraphQL
 
 http://localhost:8000/__graphql
 
