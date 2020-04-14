@@ -8,7 +8,13 @@ hero:
     - label: I want to Volunteer
       url: http://example.com
 mission:
-  step: []
+  step:
+    - image: ../img/placeholder.png
+      heading: We're giving people free digital tools
+    - image: ../img/placeholder.png
+      heading: So it’s easier and safer to deliver food and aid
+    - image: ../img/placeholder.png
+      heading: To those who need it during the Covid-19 crisis
 video:
   title: CoronaDonor.org Introduction
   url: https://www.youtube.com/embed/ia7h5sRIe5U
