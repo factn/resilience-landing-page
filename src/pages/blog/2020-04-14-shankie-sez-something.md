@@ -8,4 +8,4 @@ featuredimage: /img/woman-shopping.jpg
 tags:
   - covid
 ---
-Here's something
+Here's something. And here's something else.!
