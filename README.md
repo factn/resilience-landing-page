@@ -31,7 +31,7 @@ $ npm start
 
 # GraphQL
 
-(http://localhost:8000/__graphql)
+http://localhost:8000/__graphql
 
 
 **Note:** This theme uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/) and [Netlify CMS](https://www.netlifycms.org)
