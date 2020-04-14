@@ -47,7 +47,7 @@ contribute:
         Channel text
       button: Button label
       url: Button URL
-  text: Test text
+  text: Test text. Another test
 team:
   heading: Meet the Team
   text: >
