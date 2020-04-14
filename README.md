@@ -1,5 +1,7 @@
 # Mutual Aid - Resilience App Theme
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
+
 ## Prerequisites
 
 - Node (I recommend using v8.2.0 or higher)
