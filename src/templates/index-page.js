@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
       <Video title={video.title} url={video.url} />
       <Section row={section.row} />
       <Contribute channel={contribute.channel} />
-      <Team member={team.member} />
+      <Team heading={team.heading} text={team.text} member={team.member} />
     </Fragment >
   )
 
@@ -47,6 +47,8 @@ IndexPageTemplate.propTypes = {
     channel: PropTypes.array,
   }),
   team: PropTypes.shape({
+    heading: PropTypes.string,
+    text: PropTypes.string,
     member: PropTypes.array,
   }),
 }
@@ -80,7 +82,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
 query IndexPageQuery {
-  markdownRemark {
+  markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
     frontmatter {
       hero {
         title
@@ -92,7 +94,11 @@ query IndexPageQuery {
       mission {
         step {
           image {
-            absolutePath
+            childImageSharp {
+            fluid(maxWidth: 200, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+           }
           }
           heading
         }
@@ -129,7 +135,11 @@ query IndexPageQuery {
         text
         member {
           image {
-            absolutePath
+            childImageSharp {
+              fluid(maxWidth: 200, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+           }
           }
           heading
         }
