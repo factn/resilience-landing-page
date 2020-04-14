@@ -144,7 +144,6 @@ query IndexPageQuery {
           heading
         }
       }
-      templateKey
     }
   }
 }
