@@ -7,14 +7,18 @@ const Contribute = ({ channel, heading }) => (
     <div class="siteContent">
       <div class="siteContent-inner">
         <h1>{heading}</h1>
-        {channel.map((item, i) => (
-          <div className="cardItem" key={i}>
-            <PreviewCompatibleImage imageInfo={item} />
-            <h2>{item.heading}</h2>
-            <p>{item.text}</p>
-            <a className="button tertiary" href={item.url}>{item.button}</a>
-          </div>
-        ))}
+        <div className="cardWrapper">
+          {channel.map((item, i) => (
+            <div className="cardItem-wrapper">
+              <div className="cardItem" key={i}>
+                <PreviewCompatibleImage imageInfo={item} />
+                <h2>{item.heading}</h2>
+                <p>{item.text}</p>
+                <a className="button tertiary" href={item.url}>{item.button}</a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </section>

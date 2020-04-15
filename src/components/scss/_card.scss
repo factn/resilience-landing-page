@@ -1,5 +1,18 @@
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.cardItem-wrapper {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+}
+
 .cardItem {
   background-color: white;
   box-shadow: $box-shadow;
   padding: 1rem;
+  text-align: center;
 }
