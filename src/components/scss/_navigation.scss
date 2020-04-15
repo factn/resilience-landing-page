@@ -1,3 +1,10 @@
+.siteNav {
+  display: none;
+  @include media(sm){
+    display: block;
+  }
+}
+
 .siteNav a {
   color: black;
   font-weight: 600;

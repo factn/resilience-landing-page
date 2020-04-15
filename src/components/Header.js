@@ -34,7 +34,7 @@ const Header = class extends React.Component {
   render() {
     return (
       <header role="banner" className="siteHeader">
-        <Link to="/" title="Mutual Aid homepage" className="siteLogo-wrapper">
+        <Link to="/" title="Mutual Aid homepage">
           <img className="siteLogo" src={logo} alt="MutualAid.world, global community, local aid" />
         </Link>
 
