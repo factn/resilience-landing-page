@@ -6,7 +6,7 @@ const Contact = class extends React.Component {
     return (
       <aside className="contactModule-wrapper">
         <div className="siteContent-inner contactModule">
-          <h2>Enabling communities to help themselves</h2>
+          <h2>Helping communities to help themselves</h2>
           <Link className="button primary" to="/">Contact Us</Link>
         </div>
       </aside>
