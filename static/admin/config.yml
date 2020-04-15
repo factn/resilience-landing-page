@@ -9,8 +9,6 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-logo_url: https://github.com/factn/resilienceapp_theme/blob/master/svg-mark.svg
-
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
