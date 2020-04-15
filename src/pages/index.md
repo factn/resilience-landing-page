@@ -5,7 +5,7 @@ hero:
   button:
     - label: I Need Help
       url: http://example.com
-    - label: I want to Help
+    - label: I Want to Help
       url: http://example.com
 mission:
   step:
