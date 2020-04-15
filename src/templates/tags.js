@@ -31,7 +31,7 @@ class TagRoute extends React.Component {
               <p>{tagHeader}</p>
               <ul className="tagPost-list">{postLinks}</ul>
               <p>
-                <Link className="button primary" to="/tags/">Browse all tags</Link>
+                <Link className="button secondary" to="/tags/">Browse all tags</Link>
               </p>
             </div>
           </div>

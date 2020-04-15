@@ -8,7 +8,6 @@ a {
 
 .tag,
 .button {
-  background-color: $color-grey;
   border-radius: 4px;
   color: black;
   display: inline-block;
@@ -19,10 +18,12 @@ a {
 }
 
 .tag {
+  background-color: $color-lilac;
   padding: .5rem;
 }
 
 .button {
+  background-color: $color-grey;
   padding: .5rem 3rem;
 }
 

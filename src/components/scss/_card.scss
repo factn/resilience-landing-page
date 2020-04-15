@@ -1,19 +1,25 @@
 .cardWrapper {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 -1rem;
+  @include media(sm){
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .cardItem-wrapper {
-  display: flex;
-  flex: 1;
   padding: 1rem;
+  @include media(sm){
+    display: flex;
+    flex: 1;
+  }
 }
 
 .cardItem {
   padding: 1rem;
-  align-items: center;
   text-align: center;
+  @include media(sm){
+    align-items: center;
+  }
 }
 
 .cardItem.box {

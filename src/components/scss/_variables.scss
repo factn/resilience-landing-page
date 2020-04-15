@@ -2,14 +2,15 @@
 
 $max-width: 64rem;
 
-$box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
-
 // Colors
 $color-blue: #150E60;
 $color-sky: #EFF3FB;
 $color-vibrant-purple: #3739B5;
 $color-lilac: #D4D6FE;
 $color-grey: #C4C4C4;
+
+$box-shadow: 0px 6px 14px rgba($color-blue, 0.2);
+
 
 // Global breakpoints based on the material-ui default theme
 // "xs": 360,
