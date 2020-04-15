@@ -11,7 +11,7 @@ const Mission = ({ step }) => (
             <div className="cardItem">
               <figure className="cardItem-image-wrapper">
                 <figcaption>{item.heading}</figcaption>
-                <div class="cardItem-image">
+                <div className="cardItem-image">
                   <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
                 </div>
               </figure>

@@ -4,7 +4,7 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Team = ({ heading, text, member }) => (
   <section>
-    <div class="siteContent-inner centerText">
+    <div className="siteContent-inner centerText">
       <h1>{heading}</h1>
       <p>{text}</p>
       <div className="gridBlock">

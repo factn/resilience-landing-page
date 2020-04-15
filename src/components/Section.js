@@ -5,7 +5,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const Section = ({ row }) => (
   <Fragment>
     <section>
-      <div class="siteContent">
+      <div className="siteContent">
         {row.map((item, i) => (
           <div className="sectionBlock" key={i}>
             <figure className="sectionBlock-figure">

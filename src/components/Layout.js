@@ -16,6 +16,8 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
 
+
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -37,7 +39,7 @@ const Layout = ({ children }) => {
         <link
           rel="mask-icon"
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
-          color="#ff4400"
+          color="#3739b5"
         />
         <meta name="theme-color" content="#fff" />
 
