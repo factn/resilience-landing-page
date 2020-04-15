@@ -4,23 +4,21 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Contribute = ({ channel, heading }) => (
   <section className="featuredBlock-wrapper">
-    <div class="siteContent">
-      <div class="siteContent-inner center">
-        <h1>{heading}</h1>
-        <div className="cardWrapper">
-          {channel.map((item, i) => (
-            <div className="cardItem-wrapper" key={i}>
-              <div className="cardItem box">
-                <div class="cardItem-image">
-                  <PreviewCompatibleImage imageInfo={item} />
-                </div>
-                <h2>{item.heading}</h2>
-                <p>{item.text}</p>
-                <a className="button tertiary" href={item.url}>{item.button}</a>
+    <div class="siteContent centerText">
+      <h1>{heading}</h1>
+      <div className="cardWrapper">
+        {channel.map((item, i) => (
+          <div className="cardItem-wrapper" key={i}>
+            <div className="cardItem box">
+              <div class="cardItem-image">
+                <PreviewCompatibleImage imageInfo={item} />
               </div>
+              <h2>{item.heading}</h2>
+              <p>{item.text}</p>
+              <a className="button tertiary" href={item.url}>{item.button}</a>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   </section>

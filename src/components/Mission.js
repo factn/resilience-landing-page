@@ -4,7 +4,7 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Mission = ({ step }) => (
   <section>
-    <div className="siteContent-inner">
+    <div className="siteContent">
       <div className="cardWrapper">
         {step.map((item, i) => (
           <div className="cardItem-wrapper" key={i}>

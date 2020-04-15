@@ -75,4 +75,25 @@ team:
       heading: Krishna
     - image: ../img/placeholder.png
       heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+    - image: ../img/placeholder.png
+      heading: Krishna
+      
 ---
