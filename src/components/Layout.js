@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import './scss/styles.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-const TemplateWrapper = ({ children }) => {
+const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <Fragment>
@@ -50,9 +51,10 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Header />
       <main>{children}</main>
+      <Contact />
       <Footer />
     </Fragment>
   )
 }
 
-export default TemplateWrapper
+export default Layout

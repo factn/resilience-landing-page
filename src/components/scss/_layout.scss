@@ -50,3 +50,12 @@ section {
 .featuredBlock-wrapper {
   background-image: linear-gradient($color-sky 70%, white 30%);
 }
+
+.contactModule-wrapper {
+  background-color: $color-sky;
+  padding: 2rem 1.5rem;
+}
+
+.contactModule {
+  text-align: center;
+}
