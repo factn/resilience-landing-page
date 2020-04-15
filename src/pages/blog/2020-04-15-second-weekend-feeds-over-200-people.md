@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Second Weekend Feeds Over 200 People
 date: 2020-04-15T03:30:23.687Z
-description: Delivery to Mission Hills, Silver Lake, and East Hollywood
+description: Delivery to Mission Hills, Silver Lake, and East Hollywood.
 featuredpost: true
 featuredimage: /img/image-copy.png
 tags:
