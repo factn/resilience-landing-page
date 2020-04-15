@@ -6,7 +6,7 @@
 .siteContent-inner {
   max-width: $max-width / 1.25;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .siteMission {
@@ -25,13 +25,13 @@ section {
     flex-direction: row;
 
     .sectionBlock-content {
-      padding: 0 0 0 2rem;
+      padding: 0 0 0 1.5rem;
     }
 
     &:nth-child(2n){
       flex-direction: row-reverse;
       .sectionBlock-content {
-        padding: 0 2rem 0 0;
+        padding: 0 1.5rem 0 0;
       }
     }
   }
@@ -53,9 +53,12 @@ section {
 
 .contactModule-wrapper {
   background-color: $color-sky;
-  padding: 2rem 1.5rem;
 }
 
 .contactModule {
   text-align: center;
+}
+
+.contactModule-title {
+  margin-top: 0;
 }
