@@ -19,12 +19,29 @@ section {
 
 .sectionBlock {
   display: flex;
-  &:nth-child(2n){
-    flex-direction: row-reverse;
-  }
+  flex-direction: column;
+  margin: 1rem 0;
+  @include media(sm){
+    flex-direction: row;
 
-  .sectionBlock-content,
-  .gatsby-image-wrapper {
+    .sectionBlock-content {
+      padding: 0 0 0 2rem;
+    }
+
+    &:nth-child(2n){
+      flex-direction: row-reverse;
+      .sectionBlock-content {
+        padding: 0 2rem 0 0;
+      }
+    }
+  }
+}
+
+.sectionBlock-content,
+.sectionBlock-figure {
+  align-self: center;
+  flex: 1;
+  @include media(sm){
     width: 50%;
     align-self: center;
   }

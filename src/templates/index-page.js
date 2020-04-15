@@ -110,7 +110,11 @@ query IndexPageQuery {
       section {
         row {
           image {
-            absolutePath
+            childImageSharp {
+            fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+           }
           }
           heading
           text

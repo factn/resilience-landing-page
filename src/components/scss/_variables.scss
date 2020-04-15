@@ -10,3 +10,28 @@ $color-sky: #EFF3FB;
 $color-vibrant-purple: #3739B5;
 $color-lilac: #D4D6FE;
 $color-grey: #C4C4C4;
+
+// Global breakpoints based on the material-ui default theme
+// "xs": 360,
+// "sm": 600,
+// "md": 960,
+// "lg": 1280,
+// "xl": 1920
+
+@mixin media($size){
+  @if $size == sm {
+    @media screen and (min-width:600px){ @content; }
+  }
+  @else if $size == md {
+    @media screen and (min-width:960px){ @content; }
+  }
+  @else if $size == mdMax {
+    @media screen and (max-width:960px){ @content; }
+  }
+  @else if $size == lg {
+    @media screen and (min-width:1280px){ @content; }
+  }
+  @else if $size == xl {
+    @media screen and (min-width:1920px){ @content; }
+  }
+}
