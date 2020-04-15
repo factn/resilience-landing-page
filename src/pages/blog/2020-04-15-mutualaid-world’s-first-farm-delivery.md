@@ -18,7 +18,7 @@ The first weekend of April 2020, we piloted our farm pickup and delivery service
 
 A volunteer loaded their car with produce from [McGrath Family Farms](http://www.mcgrathfamilyfarm.com/), an organic, sustainable farm in Southern California.
 
-![Panorama of the McGrath Farm](/img/delivery3.jpg)
+![Panorama of the McGrath Farm.](/img/delivery3.jpg)
 
 The McGrath family has been farming this land for 5 generations.
 
