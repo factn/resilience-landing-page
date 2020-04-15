@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../img/svg-logo.svg'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
@@ -11,7 +10,6 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className="siteFooter">
-
         <nav className="siteNav siteFooter-nav">
           <Link to="/" className="navbar-item">Home</Link>
           <Link className="navbar-item" to="/about">About</Link>
