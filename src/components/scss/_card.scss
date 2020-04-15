@@ -12,10 +12,20 @@
 
 .cardItem {
   padding: 1rem;
+  align-items: center;
   text-align: center;
 }
 
 .cardItem.box {
   background-color: white;
   box-shadow: $box-shadow;
+}
+
+.cardItem-wrapper figcaption {
+  margin-bottom: 1rem;
+}
+
+.cardItem-image {
+  max-width: 9rem;
+  margin: 0 auto;
 }

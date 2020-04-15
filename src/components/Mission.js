@@ -9,8 +9,12 @@ const Mission = ({ step }) => (
         {step.map((item, i) => (
           <div className="cardItem-wrapper" key={i}>
             <div className="cardItem">
-              <strong>{item.heading}</strong>
-              <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
+              <figure className="cardItem-image-wrapper">
+                <figcaption>{item.heading}</figcaption>
+                <div class="cardItem-image">
+                  <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
+                </div>
+              </figure>
             </div>
           </div>
         ))}
