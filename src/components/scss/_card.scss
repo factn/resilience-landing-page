@@ -11,8 +11,11 @@
 }
 
 .cardItem {
-  background-color: white;
-  box-shadow: $box-shadow;
   padding: 1rem;
   text-align: center;
+}
+
+.cardItem.box {
+  background-color: white;
+  box-shadow: $box-shadow;
 }

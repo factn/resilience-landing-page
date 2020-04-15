@@ -9,8 +9,8 @@ const Contribute = ({ channel, heading }) => (
         <h1>{heading}</h1>
         <div className="cardWrapper">
           {channel.map((item, i) => (
-            <div className="cardItem-wrapper">
-              <div className="cardItem" key={i}>
+            <div className="cardItem-wrapper" key={i}>
+              <div className="cardItem box">
                 <PreviewCompatibleImage imageInfo={item} />
                 <h2>{item.heading}</h2>
                 <p>{item.text}</p>
