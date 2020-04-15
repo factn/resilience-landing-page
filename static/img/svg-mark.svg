@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="linear-gradient" x1="306.24" y1="-67.65" x2="368.69" y2="-56.64" gradientTransform="matrix(0, 1, 1, 0, 95.85, -288.52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d31c16"/>
+      <stop offset="0.1" stop-color="#da2731"/>
+      <stop offset="0.22" stop-color="#df3455"/>
+      <stop offset="0.33" stop-color="#e33d70"/>
+      <stop offset="0.44" stop-color="#e74583"/>
+      <stop offset="0.56" stop-color="#e7498f"/>
+      <stop offset="0.68" stop-color="#e74c94"/>
+      <stop offset="0.72" stop-color="#e7498d"/>
+      <stop offset="0.78" stop-color="#e6427c"/>
+      <stop offset="0.85" stop-color="#e13861"/>
+      <stop offset="0.92" stop-color="#db2a3a"/>
+      <stop offset="1" stop-color="#d31c16"/>
+    </linearGradient>
+  </defs>
+  <title>Mutual Aid logo</title>
+  <g>
+    <path d="M28.11,82C15.3,82,4.92,67.66,4.92,50S15.3,18,28.11,18c4.78,0,18.17,5.47,23.2,5.47,20.2,0-4,12.77-4,26.52s23.45,24.64,5.84,24.64C47,74.63,33.72,82,28.11,82Z" fill="url(#linear-gradient)"/>
+    <path d="M95.08,82c0-18-5.5-30.48-23.43-30.48C51,51.52,44,82,25.68,82Z" fill="#262757"/>
+    <path d="M95.08,18c0,18-5.5,30.48-23.43,30.48C51,48.48,44,18,25.68,18Z" fill="#262757"/>
+  </g>
+</svg>
