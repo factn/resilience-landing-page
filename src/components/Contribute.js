@@ -11,7 +11,9 @@ const Contribute = ({ channel, heading }) => (
           {channel.map((item, i) => (
             <div className="cardItem-wrapper" key={i}>
               <div className="cardItem box">
-                <PreviewCompatibleImage imageInfo={item} />
+                <div class="cardItem-image">
+                  <PreviewCompatibleImage imageInfo={item} />
+                </div>
                 <h2>{item.heading}</h2>
                 <p>{item.text}</p>
                 <a className="button tertiary" href={item.url}>{item.button}</a>

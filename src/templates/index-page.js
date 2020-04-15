@@ -95,7 +95,7 @@ query IndexPageQuery {
         step {
           image {
             childImageSharp {
-            fluid(maxWidth: 200, quality: 100) {
+            fluid(maxWidth: 400, quality: 100) {
             ...GatsbyImageSharpFluid
             }
            }
@@ -126,7 +126,11 @@ query IndexPageQuery {
         heading
         channel {
           image {
-            absolutePath
+            childImageSharp {
+            fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+           }
           }
           heading
           text
@@ -140,7 +144,7 @@ query IndexPageQuery {
         member {
           image {
             childImageSharp {
-              fluid(maxWidth: 200, quality: 100) {
+              fluid(maxWidth: 400, quality: 100) {
               ...GatsbyImageSharpFluid
             }
            }

@@ -37,7 +37,7 @@ section:
 contribute:
   heading: Other ways to get get involved
   channel:
-    - image: /img/image-placeholder.png
+    - image: /img/github.png
       heading: Developers
       text: >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -49,13 +49,13 @@ contribute:
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt dipiscing elit.
       url: https://bit.ly/join_mutualaid_slack
-      image: /img/image-placeholder.png
+      image: /img/slack.png
     - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt dipiscing elit.
       heading: Donors
       button: Donate
       url: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JA3WRU7SEFB8Y&source=url
-      image: /img/image-placeholder.png
+      image: /img/paypal.png
   text: Test text. Another test
 team:
   heading: Meet the Team

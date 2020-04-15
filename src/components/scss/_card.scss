@@ -19,6 +19,7 @@
 .cardItem.box {
   background-color: white;
   box-shadow: $box-shadow;
+  padding: 2rem 1rem;
 }
 
 .cardItem-wrapper figcaption {
@@ -26,6 +27,6 @@
 }
 
 .cardItem-image {
-  max-width: 9rem;
+  max-width: 7.5rem;
   margin: 0 auto;
 }
