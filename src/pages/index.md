@@ -65,35 +65,6 @@ team:
     scientists, strategists, writers, and translators creating apps to help
     people help each other.
   member:
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-    - image: ../img/placeholder.png
-      heading: Krishna
-      
+    - image: /img/simontegg.jpeg
+      heading: Simon Tegg
 ---
