@@ -8,9 +8,11 @@ class TagRoute extends React.Component {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
       <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-        </Link>
+        <article>
+          <Link to={post.node.fields.slug}>
+            <h1>{post.node.frontmatter.title}</h1>
+          </Link>
+        </article>
       </li>
     ))
     const tag = this.props.pageContext.tag
@@ -22,21 +24,19 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
+        <div className="siteContent">
+          <div className="siteContent-inner">
+            <Helmet title={`${tag} | ${title}`} />
+            <div className="tagPost-list-wrapper">
+              <p>{tagHeader}</p>
+              <ul className="tagPost-list">{postLinks}</ul>
+              <p>
+                <Link className="button primary" to="/tags/">Browse all tags</Link>
+              </p>
             </div>
           </div>
-        </section>
-      </Layout>
+        </div>
+      </Layout >
     )
   }
 }

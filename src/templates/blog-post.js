@@ -30,10 +30,10 @@ export const BlogPostTemplate = ({
         {tags && tags.length ? (
           <div className="tagList-wrapper">
             <h4>Tags</h4>
-            <ul className="taglist">
+            <ul className="tagList">
               {tags.map(tag => (
                 <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  <Link className="tag" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                 </li>
               ))}
             </ul>

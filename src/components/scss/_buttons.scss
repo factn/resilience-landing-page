@@ -1,8 +1,12 @@
 a {
-  color: $color-vibrant-purple;
+  color: $color-blue;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
+.tag,
 .button {
   background-color: $color-grey;
   border-radius: 4px;
@@ -12,6 +16,13 @@ a {
   margin-bottom: .25rem;
   margin-right: .5rem;
   margin-top: .25rem;
+}
+
+.tag {
+  padding: .5rem;
+}
+
+.button {
   padding: .5rem 3rem;
 }
 
