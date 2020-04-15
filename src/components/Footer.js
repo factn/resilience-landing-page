@@ -15,9 +15,7 @@ const Footer = class extends React.Component {
         <nav className="siteNav siteFooter-nav">
           <Link to="/" className="navbar-item">Home</Link>
           <Link className="navbar-item" to="/about">About</Link>
-          <Link className="navbar-item" to="/contact/examples">Form Examples</Link>
           <Link className="navbar-item" to="/blog">Latest Stories</Link>
-          <Link className="navbar-item" to="/contact">Contact</Link>
         </nav>
 
         {/* <a title="facebook" href="https://facebook.com">
