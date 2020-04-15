@@ -5,7 +5,7 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 const Contribute = ({ channel, heading }) => (
   <section className="featuredBlock-wrapper">
     <div class="siteContent">
-      <div class="siteContent-inner">
+      <div class="siteContent-inner center">
         <h1>{heading}</h1>
         <div className="cardWrapper">
           {channel.map((item, i) => (

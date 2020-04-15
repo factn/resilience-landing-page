@@ -4,17 +4,15 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Team = ({ heading, text, member }) => (
   <section>
-    <div class="siteContent-inner">
-      <div className="gridBlock-wrapper">
-        <h1>{heading}</h1>
-        <p>{text}</p>
-        <div className="gridBlock">
-          {member.map((item, i) => (
-            <div key={i}>
-              <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
-            </div>
-          ))}
-        </div>
+    <div class="siteContent-inner center">
+      <h1>{heading}</h1>
+      <p>{text}</p>
+      <div className="gridBlock">
+        {member.map((item, i) => (
+          <div key={i}>
+            <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
+          </div>
+        ))}
       </div>
     </div>
   </section>
