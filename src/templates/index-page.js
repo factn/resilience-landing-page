@@ -111,7 +111,7 @@ query IndexPageQuery {
         row {
           image {
             childImageSharp {
-            fluid(maxWidth: 1000, quality: 100) {
+            fluid(maxWidth: 1280, maxHeight: 720, quality: 100) {
             ...GatsbyImageSharpFluid
             }
            }
