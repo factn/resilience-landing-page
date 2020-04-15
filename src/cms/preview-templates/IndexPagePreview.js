@@ -8,7 +8,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <IndexPageTemplate
+        hero={data.hero}
         mission={data.mission || { step: [] }}
+        video={data.video}
         section={data.section || { row: [] }}
         contribute={data.contribute || { channel: [] }}
         team={data.team || { member: [] }}
