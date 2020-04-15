@@ -9,11 +9,11 @@ hero:
       url: http://example.com
 mission:
   step:
-    - image: ../img/placeholder.png
+    - image: /img/mission-svg-1.svg
       heading: We're giving people free digital tools
-    - image: ../img/placeholder.png
+    - image: /img/mission-svg-2.svg
       heading: So it’s easier and safer to deliver food and aid
-    - image: ../img/placeholder.png
+    - image: /img/mission-svg-3.svg
       heading: To those who need it during the Covid-19 crisis
 video:
   title: CoronaDonor.org Introduction
