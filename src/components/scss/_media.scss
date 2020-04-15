@@ -12,6 +12,11 @@ iframe {
   width: 100%;
 }
 
+.featuredImage,
+.blogPost-content img {
+  margin: 1.5rem 0;
+}
+
 .videoBlock-wrapper {
   max-width: $max-width / 1.5;
   display: block;

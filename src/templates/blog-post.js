@@ -22,7 +22,10 @@ export const BlogPostTemplate = ({
         {helmet || ''}
         <h1>{title}</h1>
         <p>{description}</p>
-        <PostContent content={content} />
+
+        <div className="blogPost-content">
+          <PostContent content={content} />
+        </div>
 
         {tags && tags.length ? (
           <div className="tagList-wrapper">

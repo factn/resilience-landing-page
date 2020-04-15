@@ -16,14 +16,16 @@ class BlogList extends React.Component {
               <article key={i} className={`blogItem ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}>
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
+                    <Link to={post.fields.slug}>
+                      <div className="featuredImage">
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            image: post.frontmatter.featuredimage,
+                            alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                          }}
+                        />
+                      </div>
+                    </Link>
                   ) : null}
                   <div className="post-content">
                     <Link to={post.fields.slug}>
