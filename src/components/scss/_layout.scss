@@ -1,7 +1,7 @@
 .siteContent {
   max-width: $max-width;
   margin: 0 auto;
-  padding: $pad;
+  padding: $gap;
 }
 
 .siteContent-inner {
@@ -14,20 +14,18 @@
 }
 
 .sectionBlock {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
+  margin: $gap 0;
   @include media(sm){
-    flex-direction: row;
+    display: flex;
 
     .sectionBlock-content {
-      padding: 0 0 0 $pad;
+      padding: 0 0 0 $gap;
     }
 
     &:nth-child(2n){
       flex-direction: row-reverse;
       .sectionBlock-content {
-        padding: 0 $pad 0 0;
+        padding: 0 $gap 0 0;
       }
     }
   }
@@ -35,9 +33,8 @@
 
 .sectionBlock-content,
 .sectionBlock-figure {
-  align-self: center;
-  flex: 1;
   @include media(sm){
+    flex: 1;
     width: 50%;
     align-self: center;
   }

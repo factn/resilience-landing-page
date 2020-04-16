@@ -3,7 +3,7 @@
   padding: 1rem;
   text-align: center;
   @include media(sm){
-    padding: 4rem $pad;
+    padding: 4rem $gap;
   }
 }
 
