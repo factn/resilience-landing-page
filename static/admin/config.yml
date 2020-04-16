@@ -31,6 +31,8 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    create: true
+    folder: "src/pages"
     files:
       - file: "src/pages/index.md"
         label: "Home"
