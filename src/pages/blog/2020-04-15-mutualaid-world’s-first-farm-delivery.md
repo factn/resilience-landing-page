@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: FeedFolksLA's First Farm Delivery
-date: 2020-04-16T03:20:34.088Z
+date: 2020-04-10T03:20:34.088Z
 description: One of our grassroots partners in Southern California makes their
   first delivery to those in need due to the Covid-19 pandemic.
 featuredpost: true
