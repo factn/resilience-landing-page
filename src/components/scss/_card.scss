@@ -1,5 +1,5 @@
 .cardWrapper {
-  margin: 0 -$pad;
+  margin: 0 (-$pad);
   @include media(sm){
     display: flex;
     flex-wrap: wrap;
