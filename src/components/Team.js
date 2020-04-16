@@ -5,9 +5,11 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 const Team = ({ heading, text, member }) => (
   <section>
     <div className="siteContent">
-      <div className="siteContent-inner centerText">
-        <h1>{heading}</h1>
-        <p>{text}</p>
+      <div className="siteContent-inner">
+        <header className="sectionHeader">
+          <h1 className="sectionHeader-title">{heading}</h1>
+          <p>{text}</p>
+        </header>
         <div className="gridBlock">
           {member.map((item, i) => (
             <div key={i}>
