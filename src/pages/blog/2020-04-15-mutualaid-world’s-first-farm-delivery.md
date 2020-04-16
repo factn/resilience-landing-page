@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post
-title: MutualAid.world’s First Farm Delivery
-date: 2020-04-15T03:20:34.088Z
-description: First delivery to people in need from McGrath Family Farms in
-  Southern California.
+title: FeedFolksLA's First Farm Delivery
+date: 2020-04-16T03:20:34.088Z
+description: One of our grassroots partners in Southern California makes their
+  first delivery to those in need due to the Covid-19 pandemic.
 featuredpost: true
 featuredimage: /img/delivery6.jpg
 tags:
@@ -11,19 +11,18 @@ tags:
   - MutualAid.world
   - McGrath Family Farms
   - produce delivery
+  - FeedFolksLA
 ---
-The first weekend of April 2020, we piloted our farm pickup and delivery service to Studio City in Los Angeles, California.
+The first weekend of April 2020, FeedFolksLA piloted their first farm pickup and delivery service to Studio City in Los Angeles, California. They're one of the first local organizations we've connected with to develop the software that will help them coordinate deliveries. By following their process, we've been able to make sure we're creating tools that are both useful and easy to use.
 
 ![Trunk loaded with produce boxes](/img/delivery5.jpg)
 
-A volunteer loaded their car with produce from [McGrath Family Farms](http://www.mcgrathfamilyfarm.com/), an organic, sustainable farm in Southern California.
+After collecting monetary donations, contacting a farm, and connecting with people who need help, FeedFolks LA was ready for delivery. One volunteer loaded their car with produce from [McGrath Family Farms](http://www.mcgrathfamilyfarm.com/), an organic, sustainable farm in Southern California who has been farming this land for 5 generations.
 
 ![Panorama of the McGrath Farm.](/img/delivery3.jpg)
 
-The McGrath family has been farming this land for 5 generations.
+Boxes were donated to first responders, and citizens who've been gravely impacted by COVID-19 in North Hollywood.
 
-The boxes were paid for by folks who purchased their own and donated boxes to the first responders of the COVID-19 crisis in North Hollywood.
+![FeedFolksLA volunteer wearing a protective mask with produce boxes behind him.](/img/delivery1.jpg)
 
-![Volunteer wearing a protective mask with produce boxes behind him.](/img/delivery1.jpg)
-
-This weekend, April 11th and 12th, we are doubling our deliveries and expanding to three additional Southern California neighborhoods—Mission Hills, East Hollywood and Silver Lake.
+This weekend, April 11th and 12th, FeedFolksLA will be doubling their deliveries and expanding to three additional Southern California neighborhoods—Mission Hills, East Hollywood and Silver Lake.
