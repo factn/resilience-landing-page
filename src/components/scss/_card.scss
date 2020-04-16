@@ -1,5 +1,5 @@
 .cardWrapper {
-  margin: 0 (-$pad);
+  margin: 0 (-$pad / 2);
   @include media(sm){
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
 }
 
 .cardItem-wrapper {
-  padding: $pad;
+  padding: $pad / 2;
   @include media(sm){
     display: flex;
     flex: 1;
@@ -24,7 +24,7 @@
 
 .cardItem.box {
   background-color: white;
-  border-radius: $border-radius;
+  border-radius: 4px;
   box-shadow: $box-shadow;
   padding: $pad 1rem;
 }
