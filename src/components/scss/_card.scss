@@ -1,5 +1,5 @@
 .cardWrapper {
-  margin: 0 -1rem;
+  margin: 0 -$pad;
   @include media(sm){
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
 }
 
 .cardItem {
-  padding: 1rem;
+  padding: $pad;
   text-align: center;
   @include media(sm){
     align-items: center;
@@ -26,7 +26,7 @@
   background-color: white;
   border-radius: 4px;
   box-shadow: $box-shadow;
-  padding: 2rem 1rem;
+  padding: $pad 1rem;
 }
 
 .cardItem-wrapper figcaption {

@@ -19,15 +19,8 @@ iframe {
 .featuredImage,
 .blogPost-content img {
   border-radius: 4px;
-  margin: 1.5rem 0;
+  margin: $pad 0;
   width: 100%;
-}
-
-.videoBlock-wrapper {
-  max-width: $max-width / 1.2;
-  display: block;
-  margin: 0 auto;
-  padding: 2rem 0;
 }
 
 .videoBlock-inner-wrapper {

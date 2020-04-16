@@ -1,7 +1,7 @@
 .gridBlock {
   display: grid;
   grid-gap: 0.5rem;
-  margin: 2rem 0;
+  margin: $pad 0;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   grid-auto-rows: minmax(8rem, auto);
 }

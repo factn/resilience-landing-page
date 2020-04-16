@@ -1,20 +1,12 @@
 .siteContent {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: $pad;
 }
 
 .siteContent-inner {
   max-width: $max-width / 1.2;
   margin: 0 auto;
-}
-
-.siteContent-inner.center {
-  text-align: center;
-}
-
-section {
-  padding: 1rem 0;
 }
 
 .sectionBlock {
@@ -25,13 +17,13 @@ section {
     flex-direction: row;
 
     .sectionBlock-content {
-      padding: 0 0 0 1.5rem;
+      padding: 0 0 0 $pad;
     }
 
     &:nth-child(2n){
       flex-direction: row-reverse;
       .sectionBlock-content {
-        padding: 0 1.5rem 0 0;
+        padding: 0 $pad 0 0;
       }
     }
   }
@@ -49,17 +41,4 @@ section {
 
 .featuredBlock-wrapper {
   background-image: linear-gradient($color-sky 70%, white 30%);
-}
-
-.contactModule-wrapper {
-  background-color: $color-sky;
-}
-
-.contactModule {
-  text-align: center;
-  padding: 3rem 0;
-}
-
-.contactModule-title {
-  margin-top: 0;
 }
