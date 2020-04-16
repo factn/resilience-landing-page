@@ -20,14 +20,14 @@ video:
   url: https://www.youtube.com/embed/ia7h5sRIe5U
 section:
   row:
-    - image: ../img/placeholder.png
+    - image: /img/placeholder.png
       heading: Need help?
       text: Sign up to make a request for a food box, small errand, or a pharmacy
         pickup. A local coordinator will match you with a volunteer who will
         take care of your need ASAP.
       button: I Need Help
       url: https://example.com
-    - image: ../img/placeholder.png
+    - image: /img/placeholder.png
       heading: Want to help?
       text: >
         Sign up to join your local network helping their neighbors through this

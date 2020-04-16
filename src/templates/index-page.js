@@ -144,8 +144,8 @@ query IndexPageQuery {
         member {
           image {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 100) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
             }
            }
           }
