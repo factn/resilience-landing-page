@@ -12,7 +12,7 @@ const Team = ({ heading, text, member }) => (
         </header>
         <div className="gridBlock">
           {member.map((item, i) => (
-            <div key={i}>
+            <div className="gridBlock-item" key={i}>
               <PreviewCompatibleImage imageInfo={item} alt={item.heading} />
             </div>
           ))}

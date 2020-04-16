@@ -17,9 +17,10 @@ iframe {
 }
 
 .featuredImage,
+.featuredImage img,
+.sectionBlock-figure img,
 .blogPost-content img {
   border-radius: $border-radius;
-  margin: $gap 0;
   width: 100%;
 }
 
