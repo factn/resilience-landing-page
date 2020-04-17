@@ -48,7 +48,7 @@ contribute:
       button: Join us on Slack
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt dipiscing elit.
-      url: https://bit.ly/join_mutualaid_slack
+      url: https://join.slack.com/t/mutualaidworld/shared_invite/zt-dh0661zb-7IteFzZm~Z8Qgizg0oulaQ
       image: /img/slack.png
     - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt dipiscing elit.
