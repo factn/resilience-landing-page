@@ -29,7 +29,7 @@ export const BlogPostTemplate = ({
 
         {tags && tags.length ? (
           <div className="tagList-wrapper">
-			  <h4 style={{color: red}}>Tags</h4>
+			  <h4 style={{color: 'red'}}>Tags</h4>
             <ul className="tagList">
               {tags.map(tag => (
                 <li key={tag + `tag`}>
