@@ -13,7 +13,7 @@ tags:
   - produce delivery
   - FeedFolksLA
 ---
-The first weekend of April 2020, FeedFolksLA piloted their first farm pickup and delivery service to Studio City in Los Angeles, California. They're one of the first local organizations we've connected with to develop the software that will help them coordinate deliveries. By following their process, we've been able to make sure we're creating tools that are both useful and easy to use.
+In the first weekend of April 2020, FeedFolks piloted their first farm pickup and delivery service to Studio City in Los Angeles, California. They're one of the first local organizations we've connected with to develop the software that will help them coordinate deliveries. By following their process, we've been able to make sure we're creating tools that are both useful and easy to use.
 
 ![Trunk loaded with produce boxes](/img/delivery5.jpg)
 
