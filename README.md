@@ -31,6 +31,11 @@ Start the server
 $ npm start
 ```
 
+Sometimes you have to run a fresh build
+```
+$ npm run clean && gatsby develop
+```
+
 ## GraphQL
 
 http://localhost:8000/__graphql
