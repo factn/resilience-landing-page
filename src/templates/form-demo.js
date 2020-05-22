@@ -11,7 +11,7 @@ export const FormDemoTemplatePage = ({ title, content, contentComponent }) => {
     <div className="siteContent">
       <div className="siteContent-inner">
         <h1>{title}</h1>
-        <form name="contact" netlify>
+        <form name="contact" method="POST" netlify="true">
           <p>
             <label>
               Name <input type="text" name="name" />
