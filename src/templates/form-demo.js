@@ -11,7 +11,19 @@ export const FormDemoTemplatePage = ({ title, content, contentComponent }) => {
     <div className="siteContent">
       <div className="siteContent-inner">
         <h1>{title}</h1>
-        <form name="contact" method="POST" netlify="true">
+        <form
+          // action="/contact/thanks/"
+          data-netlify-honeypot="bot-field"
+          data-netlify="true"
+          method="post"
+          name="contact"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
           <p>
             <label>
               Name <input type="text" name="name" />
