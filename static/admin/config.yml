@@ -50,6 +50,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/contribute/index.md"
+        label: "Contribute"
+        name: "contribute"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "form-demo"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/form-demo/index.md"
         label: "Form Demo"
         name: "formdemo"

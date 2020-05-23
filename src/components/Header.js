@@ -48,6 +48,7 @@ const Header = class extends React.Component {
         <nav role="navigation" className={`siteNav ${this.state.navBarActiveClass}`}>
           <Link className="siteNav-item" to="/about">About</Link>
           <Link className="siteNav-item" to="/blog">Blog</Link>
+          <Link className="siteNav-item" to="/contribute">Contribute</Link>
           <Link className="siteNav-item button" to="/">Get the App</Link>
         </nav>
         {/* </div> */}
