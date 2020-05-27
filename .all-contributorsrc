@@ -19,6 +19,17 @@
         "ideas",
         "projectManagement"
       ]
+    },
+    {
+      "login": "jwu910",
+      "name": "Joshua Wu",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12107969?v=4",
+      "profile": "http://joshuawu.me/",
+      "contributions": [
+        "code",
+        "review",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
