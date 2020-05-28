@@ -32,6 +32,22 @@
       ]
     },
     {
+      "login": "utunga",
+      "name": "Miles Thompson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/166867?v=4",
+      "profile": "http://goodbright.nz",
+      "contributions": [
+        "ideas",
+        "code",
+        "review",
+        "question",
+        "bug",
+        "business",
+        "content",
+        "projectManagement"
+      ]
+    },
+    {
       "login": "karenkun",
       "name": "Karen",
       "avatar_url": "https://avatars3.githubusercontent.com/u/2974103?v=4",
