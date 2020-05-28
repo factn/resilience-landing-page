@@ -30,6 +30,22 @@
         "review",
         "doc"
       ]
+    },
+    {
+      "login": "qdozaq",
+      "name": "Paul Mendoza",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/20975817?v=4",
+      "profile": "https://doza.design",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "ideas",
+        "maintenance",
+        "question",
+        "review",
+        "security"
+      ]
     }
   ],
   "contributorsPerLine": 7,
