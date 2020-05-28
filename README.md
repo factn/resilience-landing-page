@@ -1,6 +1,6 @@
 # Mutual Aid - Resilience App Theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
@@ -124,6 +124,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/daniel-huerta-34868631/"><img src="https://avatars0.githubusercontent.com/u/53913596?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Huerta</b></sub></a><br /><a href="#ideas-DAHuerta" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-DAHuerta" title="Project Management">📆</a></td>
     <td align="center"><a href="http://joshuawu.me/"><img src="https://avatars2.githubusercontent.com/u/12107969?v=4" width="100px;" alt=""/><br /><sub><b>Joshua Wu</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/commits?author=jwu910" title="Code">💻</a> <a href="https://github.com/factn/resilience-landing-page/pulls?q=is%3Apr+reviewed-by%3Ajwu910" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=jwu910" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://doza.design"><img src="https://avatars2.githubusercontent.com/u/20975817?v=4" width="100px;" alt=""/><br /><sub><b>Paul Mendoza</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/issues?q=author%3Aqdozaq" title="Bug reports">🐛</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=qdozaq" title="Code">💻</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=qdozaq" title="Documentation">📖</a> <a href="#ideas-qdozaq" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-qdozaq" title="Maintenance">🚧</a> <a href="#question-qdozaq" title="Answering Questions">💬</a> <a href="https://github.com/factn/resilience-landing-page/pulls?q=is%3Apr+reviewed-by%3Aqdozaq" title="Reviewed Pull Requests">👀</a> <a href="#security-qdozaq" title="Security">🛡️</a></td>
   </tr>
 </table>
 
