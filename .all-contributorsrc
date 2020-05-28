@@ -74,6 +74,22 @@
         "projectManagement",
         "question"
       ]
+    },
+    {
+      "login": "mat10tng",
+      "name": "Tuan Nguyen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3273671?v=4",
+      "profile": "https://www.linkedin.com/in/tuan-nguyen-067105a6/",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "ideas",
+        "maintenance",
+        "projectManagement",
+        "question",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
