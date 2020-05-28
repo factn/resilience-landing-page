@@ -46,6 +46,18 @@
         "content",
         "projectManagement"
       ]
+    },
+    {
+      "login": "karenkun",
+      "name": "Karen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2974103?v=4",
+      "profile": "http://www.linkedin.com/in/lokaren/",
+      "contributions": [
+        "design",
+        "ideas",
+        "projectManagement",
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,
