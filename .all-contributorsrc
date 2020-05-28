@@ -30,6 +30,22 @@
         "review",
         "doc"
       ]
+    },
+    {
+      "login": "utunga",
+      "name": "Miles Thompson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/166867?v=4",
+      "profile": "http://goodbright.nz",
+      "contributions": [
+        "ideas",
+        "code",
+        "review",
+        "question",
+        "bug",
+        "business",
+        "content",
+        "projectManagement"
+      ]
     }
   ],
   "contributorsPerLine": 7,
