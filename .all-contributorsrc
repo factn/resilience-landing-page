@@ -92,6 +92,17 @@
         "question",
         "review"
       ]
+    },
+    {
+      "login": "lauramei",
+      "name": "lauramei",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/66132139?v=4",
+      "profile": "https://github.com/lauramei",
+      "contributions": [
+        "ideas",
+        "design",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
