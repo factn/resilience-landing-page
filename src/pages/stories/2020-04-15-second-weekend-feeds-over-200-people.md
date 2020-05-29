@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: stories-post
 title: Second Weekend Feeds Over 200 People
 date: 2020-04-15T03:30:23.687Z
 description: FeedFolksLA, one of the first organizations to use our open-source

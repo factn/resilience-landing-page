@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 import { Link, graphql, StaticQuery } from 'gatsby';
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
-class BlogList extends React.Component {
+class StoriesList extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <ul className="blogList">
+      <ul className="storiesList">
         {posts &&
           posts.map(({ node: post, i }) => (
-            <li className="blogList-item">
+            <li className="storiesList-item">
               <article
                 key={i}
-                className={`blogItem ${
+                className={`storiesItem ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
@@ -51,7 +51,7 @@ class BlogList extends React.Component {
   }
 }
 
-BlogList.propTypes = {
+StoriesList.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -62,10 +62,10 @@ BlogList.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogListQuery {
+      query StoriesListQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "stories-post" } } }
         ) {
           edges {
             node {
@@ -92,6 +92,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogList data={data} count={count} />}
+    render={(data, count) => <StoriesList data={data} count={count} />}
   />
 );

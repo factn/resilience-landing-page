@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: stories-post
 title: Welcome to MutualAid.world
 date: 2020-04-09T03:00:17.597Z
 description: An introduction from one of our founders, Simon Mont.

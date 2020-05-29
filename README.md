@@ -44,15 +44,15 @@ $ npm run clean && gatsby develop
 http://localhost:8000/__graphql
 
 
-**Note:** This theme uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/) and [Netlify CMS](https://www.netlifycms.org)
+**Note:** This theme uses [Gatsby v2](https://www.gatsbyjs.org/stories/2018-09-17-gatsby-v2/) and [Netlify CMS](https://www.netlifycms.org)
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
 ## Features
 
-- A simple landing page with blog functionality built with Netlify CMS
-- Editabe Pages: Landing, About, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
+- A simple landing page with stories functionality built with Netlify CMS
+- Editabe Pages: Landing, About, Stories-Collection and Contact page with Netlify Form support
+- Create Stories posts from Netlify CMS
 - Tags: Separate page for posts under each tag
 - Basic directory organization
 - Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
@@ -74,7 +74,7 @@ import CMS from 'netlify-cms-app'
 // import cloudinary from 'netlify-cms-media-library-cloudinary'
 
 import AboutUsPagePreview from './preview-templates/AboutUsPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
+import StoriesPostPreview from './preview-templates/StoriesPostPreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 // CMS.registerMediaLibrary(uploadcare);
@@ -82,7 +82,7 @@ import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about-us', AboutUsPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('stories', StoriesPostPreview)
 ```
 
 Note: Don't forget to also remove them from `package.json` and `yarn.lock` / `package-lock.json` using `yarn` or `npm`. During the build netlify-cms-app will bundle the media libraries as well, having them removed will save you build time.
