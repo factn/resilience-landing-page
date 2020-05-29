@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
-import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import Mission from '../components/Mission'
-import Video from '../components/Video'
-import Section from '../components/Section'
-import Contribute from '../components/Contribute'
-import Team from '../components/Team'
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import Mission from '../components/Mission';
+import Video from '../components/Video';
+import Section from '../components/Section';
+import Contribute from '../components/Contribute';
+import Team from '../components/Team';
 
 export const IndexPageTemplate = ({
   hero,
@@ -16,17 +16,17 @@ export const IndexPageTemplate = ({
   mission,
   section,
   contribute,
-  team
+  team,
 }) => (
-    <Fragment>
-      <Hero title={hero.title} button={hero.button} />
-      <Mission step={mission.step} />
-      <Video title={video.title} url={video.url} />
-      <Section row={section.row} />
-      <Contribute heading={contribute.heading} channel={contribute.channel} />
-      <Team heading={team.heading} text={team.text} member={team.member} />
-    </Fragment >
-  )
+  <Fragment>
+    <Hero title={hero.title} button={hero.button} />
+    <Mission step={mission.step} />
+    <Video title={video.title} url={video.url} />
+    <Section row={section.row} />
+    <Contribute heading={contribute.heading} channel={contribute.channel} />
+    <Team heading={team.heading} text={team.text} member={team.member} />
+  </Fragment>
+);
 
 IndexPageTemplate.propTypes = {
   hero: PropTypes.shape({
@@ -51,10 +51,10 @@ IndexPageTemplate.propTypes = {
     text: PropTypes.string,
     member: PropTypes.array,
   }),
-}
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -67,8 +67,8 @@ const IndexPage = ({ data }) => {
         team={frontmatter.team}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -76,83 +76,83 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
-query IndexPageQuery {
-  markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-    frontmatter {
-      hero {
-        title
-        button {
-          label
+  query IndexPageQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      frontmatter {
+        hero {
+          title
+          button {
+            label
+            url
+          }
+        }
+        mission {
+          step {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            heading
+          }
+        }
+        video {
+          title
           url
         }
-      }
-      mission {
-        step {
-          image {
-            childImageSharp {
-            fluid(maxWidth: 400, quality: 100) {
-            ...GatsbyImageSharpFluid
+        section {
+          row {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1280, maxHeight: 720, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
-           }
+            heading
+            text
+            button
+            url
           }
-          heading
         }
-      }
-      video {
-        title
-        url
-      }
-      section {
-        row {
-          image {
-            childImageSharp {
-            fluid(maxWidth: 1280, maxHeight: 720, quality: 100) {
-            ...GatsbyImageSharpFluid
+        contribute {
+          heading
+          channel {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
-           }
+            heading
+            text
+            button
+            url
           }
+        }
+        team {
           heading
           text
-          button
-          url
-        }
-      }
-      contribute {
-        heading
-        channel {
-          image {
-            childImageSharp {
-            fluid(maxWidth: 400, quality: 100) {
-            ...GatsbyImageSharpFluid
+          member {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
-           }
+            heading
           }
-          heading
-          text
-          button
-          url
-        }
-      }
-      team {
-        heading
-        text
-        member {
-          image {
-            childImageSharp {
-            fluid(maxWidth: 400, quality: 100) {
-            ...GatsbyImageSharpFluid
-            }
-           }
-          }
-          heading
         }
       }
     }
   }
-}
-`
+`;

@@ -47,7 +47,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 800
+              maxWidth: 800,
             },
           },
           {
@@ -60,7 +60,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-identity-widget'
+      resolve: 'gatsby-plugin-netlify-identity-widget',
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
@@ -77,4 +77,4 @@ module.exports = {
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};

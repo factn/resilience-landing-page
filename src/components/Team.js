@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from 'react';
+import PropTypes from 'prop-types';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const Team = ({ heading, text, member }) => (
   <section>
@@ -20,7 +20,7 @@ const Team = ({ heading, text, member }) => (
       </div>
     </div>
   </section>
-)
+);
 
 Team.propTypes = {
   heading: PropTypes.string,
@@ -29,8 +29,8 @@ Team.propTypes = {
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       heading: PropTypes.string,
-    })
+    }),
   ),
-}
+};
 
-export default Team
+export default Team;

@@ -1,21 +1,20 @@
-import React, { Fragment } from 'react'
-import { Helmet } from 'react-helmet'
-import Header from '../components/Header'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
-import './scss/styles.scss'
-import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
+import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet';
+import Header from '../components/Header';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import './scss/styles.scss';
+import useSiteMetadata from './SiteMetadata';
+import { withPrefix } from 'gatsby';
 
 const Layout = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+  const { title, description } = useSiteMetadata();
   return (
     <Fragment>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
 
         <link
           rel="apple-touch-icon"
@@ -55,7 +54,7 @@ const Layout = ({ children }) => {
       <Contact />
       <Footer />
     </Fragment>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

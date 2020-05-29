@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import Layout from '../../components/Layout'
-import BlogList from '../../components/BlogList'
+import Layout from '../../components/Layout';
+import BlogList from '../../components/BlogList';
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -14,6 +14,6 @@ export default class BlogIndexPage extends React.Component {
           </div>
         </div>
       </Layout>
-    )
+    );
   }
 }

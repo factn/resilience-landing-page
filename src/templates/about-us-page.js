@@ -4,11 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-export const ContributePageTemplate = ({
-  title,
-  content,
-  contentComponent,
-}) => {
+export const AboutUsPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -21,18 +17,18 @@ export const ContributePageTemplate = ({
   );
 };
 
-ContributePageTemplate.propTypes = {
+AboutUsPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
-const ContributePage = ({ data }) => {
+const AboutUsPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <ContributePageTemplate
+      <AboutUsPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -41,14 +37,14 @@ const ContributePage = ({ data }) => {
   );
 };
 
-ContributePage.propTypes = {
+AboutUsPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default ContributePage;
+export default AboutUsPage;
 
-export const contributePageQuery = graphql`
-  query ContributePage($id: String!) {
+export const aboutUsPageQuery = graphql`
+  query AboutUsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

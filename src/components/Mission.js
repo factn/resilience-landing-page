@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from 'react';
+import PropTypes from 'prop-types';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const Mission = ({ step }) => (
   <section>
@@ -21,15 +21,15 @@ const Mission = ({ step }) => (
       </div>
     </div>
   </section>
-)
+);
 
 Mission.propTypes = {
   step: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       heading: PropTypes.string,
-    })
+    }),
   ),
-}
+};
 
-export default Mission
+export default Mission;

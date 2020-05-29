@@ -1,19 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql, StaticQuery } from 'gatsby';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 class BlogList extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <ul className="blogList">
         {posts &&
           posts.map(({ node: post, i }) => (
             <li className="blogList-item">
-              <article key={i} className={`blogItem ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}>
+              <article
+                key={i}
+                className={`blogItem ${
+                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                }`}
+              >
                 <header>
                   {post.frontmatter.featuredimage ? (
                     <Link to={post.fields.slug}>
@@ -31,19 +36,18 @@ class BlogList extends React.Component {
                     <Link to={post.fields.slug}>
                       <h2>{post.frontmatter.title}</h2>
                     </Link>
-                    <span>
-                      {post.frontmatter.date}
-                    </span>
+                    <span>{post.frontmatter.date}</span>
                   </div>
                 </header>
                 <p>{post.excerpt}</p>
-                <Link className="button secondary" to={post.fields.slug}>Keep Reading</Link>
+                <Link className="button secondary" to={post.fields.slug}>
+                  Keep Reading
+                </Link>
               </article>
             </li>
-          ))
-        }
+          ))}
       </ul>
-    )
+    );
   }
 }
 
@@ -53,7 +57,7 @@ BlogList.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 export default () => (
   <StaticQuery
@@ -90,4 +94,4 @@ export default () => (
     `}
     render={(data, count) => <BlogList data={data} count={count} />}
   />
-)
+);
