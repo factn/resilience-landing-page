@@ -125,6 +125,17 @@
         "ideas",
         "question"
       ]
+    },
+    {
+      "login": "marekdano",
+      "name": "Marek Dano",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1914165?v=4",
+      "profile": "http://marekdano.com",
+      "contributions": [
+        "code",
+        "doc",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
