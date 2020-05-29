@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: stories-post
 title: FeedFolksLA's First Farm Delivery
 date: 2020-04-10T03:20:34.088Z
 description: One of our grassroots partners in Southern California makes their

@@ -14,4 +14,4 @@ module.exports.handler = async function(event, context) {
 // fetch("/.netlify/functions/hello")
 //    .then(response => response.json())
 //    .then(console.log)
-// For more info see: https://www.gatsbyjs.org/blog/2018-12-17-turning-the-static-dynamic/#static-dynamic-is-a-spectrum
+// For more info see: https://www.gatsbyjs.org/stories/2018-12-17-turning-the-static-dynamic/#static-dynamic-is-a-spectrum
