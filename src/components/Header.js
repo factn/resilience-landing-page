@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import logo from '../img/svg-logo-text.svg'
+import React from 'react';
+import { Link } from 'gatsby';
+import logo from '../img/svg-logo-text.svg';
 
 const Header = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
       navBarActiveClass: '',
-    }
+    };
   }
 
   toggleHamburger = () => {
@@ -22,20 +22,24 @@ const Header = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-            navBarActiveClass: 'is-active',
-          })
+              navBarActiveClass: 'is-active',
+            })
           : this.setState({
-            navBarActiveClass: '',
-          })
-      }
-    )
-  }
+              navBarActiveClass: '',
+            });
+      },
+    );
+  };
 
   render() {
     return (
       <header role="banner" className="siteHeader">
         <Link to="/" title="Mutual Aid homepage">
-          <img className="siteLogo" src={logo} alt="MutualAid.world, global community, local aid" />
+          <img
+            className="siteLogo"
+            src={logo}
+            alt="MutualAid.world, global community, local aid"
+          />
         </Link>
 
         {/* Hamburger menu */}
@@ -45,16 +49,27 @@ const Header = class extends React.Component {
             onClick={() => this.toggleHamburger()}
           > */}
 
-        <nav role="navigation" className={`siteNav ${this.state.navBarActiveClass}`}>
-          <Link className="siteNav-item" to="/about">About</Link>
-          <Link className="siteNav-item" to="/blog">Blog</Link>
-          <Link className="siteNav-item" to="/contribute">Contribute</Link>
-          <Link className="siteNav-item button" to="/">Get the App</Link>
+        <nav
+          role="navigation"
+          className={`siteNav ${this.state.navBarActiveClass}`}
+        >
+          <Link className="siteNav-item" to="/about-us">
+            About Us
+          </Link>
+          <Link className="siteNav-item" to="/blog">
+            Blog
+          </Link>
+          <Link className="siteNav-item" to="/contribute">
+            Contribute
+          </Link>
+          <Link className="siteNav-item button" to="/">
+            Get the App
+          </Link>
         </nav>
         {/* </div> */}
-      </header >
-    )
+      </header>
+    );
   }
-}
+};
 
-export default Header
+export default Header;

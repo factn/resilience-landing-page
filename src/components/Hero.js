@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Hero = ({ title, button }) => (
   <header className="siteHero">
@@ -14,7 +14,7 @@ const Hero = ({ title, button }) => (
       </div>
     </div>
   </header>
-)
+);
 
 Hero.propTypes = {
   title: PropTypes.string,
@@ -22,8 +22,8 @@ Hero.propTypes = {
     PropTypes.shape({
       label: PropTypes.string,
       url: PropTypes.string,
-    })
+    }),
   ),
-}
+};
 
-export default Hero
+export default Hero;

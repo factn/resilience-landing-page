@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import Content, { HTMLContent } from '../components/Content';
 
 export const AboutUsPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+  const PageContent = contentComponent || Content;
 
   return (
     <div className="siteContent">
@@ -14,17 +14,17 @@ export const AboutUsPageTemplate = ({ title, content, contentComponent }) => {
         <PageContent className="content" content={content} />
       </div>
     </div>
-  )
-}
+  );
+};
 
 AboutUsPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const AboutUsPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -34,14 +34,14 @@ const AboutUsPage = ({ data }) => {
         content={post.html}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AboutUsPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default AboutUsPage
+export default AboutUsPage;
 
 export const aboutUsPageQuery = graphql`
   query AboutUsPage($id: String!) {
@@ -52,4 +52,4 @@ export const aboutUsPageQuery = graphql`
       }
     }
   }
-`
+`;

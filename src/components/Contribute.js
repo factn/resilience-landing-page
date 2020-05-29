@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from 'react';
+import PropTypes from 'prop-types';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const Contribute = ({ channel, heading }) => (
   <section className="featuredBlock-wrapper">
@@ -17,14 +17,16 @@ const Contribute = ({ channel, heading }) => (
               </div>
               <h2>{item.heading}</h2>
               <p>{item.text}</p>
-              <a className="button tertiary" href={item.url}>{item.button}</a>
+              <a className="button tertiary" href={item.url}>
+                {item.button}
+              </a>
             </div>
           </div>
         ))}
       </div>
     </div>
   </section>
-)
+);
 
 Contribute.propTypes = {
   heading: PropTypes.string,
@@ -34,9 +36,9 @@ Contribute.propTypes = {
       heading: PropTypes.string,
       text: PropTypes.string,
       button: PropTypes.string,
-      url: PropTypes.string
-    })
+      url: PropTypes.string,
+    }),
   ),
-}
+};
 
-export default Contribute
+export default Contribute;
