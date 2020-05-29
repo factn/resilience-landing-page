@@ -62,6 +62,9 @@ const Header = class extends React.Component {
           <Link className="siteNav-item" to="/contribute">
             Contribute
           </Link>
+          <Link className="siteNav-item" to="/partners">
+            Partners
+          </Link>
           <Link className="siteNav-item button" to="/">
             Get the App
           </Link>

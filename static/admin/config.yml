@@ -57,3 +57,10 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contribute-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/partners/index.md"
+        label: "Partners"
+        name: "partners"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "partners-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
