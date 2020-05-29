@@ -1,6 +1,6 @@
 ---
-templateKey: about-page
-path: /about
+templateKey: about-us-page
+path: /about-us
 title: About Us
 ---
 MutualAid.World is a grassroots crisis response project creating open-source digital tools to help organizations coordinate aid on the ground. 

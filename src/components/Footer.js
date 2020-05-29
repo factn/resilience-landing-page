@@ -11,9 +11,15 @@ const Footer = class extends React.Component {
     return (
       <footer className="siteFooter">
         <nav className="siteNav siteFooter-nav">
-          <Link to="/" className="navbar-item">Home</Link>
-          <Link className="navbar-item" to="/about">About</Link>
-          <Link className="navbar-item" to="/blog">Blog</Link>
+          <Link to="/" className="navbar-item">
+            Home
+          </Link>
+          <Link className="navbar-item" to="/about-us">
+            About Us
+          </Link>
+          <Link className="navbar-item" to="/blog">
+            Blog
+          </Link>
         </nav>
 
         {/* <a title="facebook" href="https://facebook.com">
@@ -45,7 +51,7 @@ const Footer = class extends React.Component {
             width="30"
           />
         </a> */}
-      </footer >
+      </footer>
     )
   }
 }

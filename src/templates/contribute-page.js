@@ -47,7 +47,7 @@ ContributePage.propTypes = {
 
 export default ContributePage;
 
-export const aboutPageQuery = graphql`
+export const contributePageQuery = graphql`
   query ContributePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

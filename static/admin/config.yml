@@ -43,24 +43,17 @@ collections:
           - {label: Sections, name: section, widget: object, fields: [{label: Row, name: row, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Heading, name: heading, widget: string, required: true}, {label: Text, name: text, widget: text, required: true}, {label: Button, name: button, widget: string, required: true}, {label: URL, name: url, widget: string, required: true}]}]}
           - {label: Contribute, name: contribute, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Channel, name: channel, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}, {label: Button, name: button, widget: string, required: true}, {label: URL, name: url, widget: string, require: true}]}]}
           - {label: Team, name: team, widget: object, fields: [{label: Heading, name: heading, widget: string, required: true}, {label: Text, name: text, widget: text, required: true}, {label: Member, name: member, widget: list, fields: [{label: Image, name: image, widget: image, required: true}, {label: Heading, name: heading, widget: string, required: true}]}]}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/about-us/index.md"
+        label: "About Us"
+        name: "about-us"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-us-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/contribute/index.md"
         label: "Contribute"
         name: "contribute"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "form-demo"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/form-demo/index.md"
-        label: "Form Demo"
-        name: "formdemo"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "form-demo"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contribute-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
