@@ -49,7 +49,6 @@ const Header = class extends React.Component {
             onClick={() => this.toggleHamburger()}
           > */}
 
-<<<<<<< HEAD
         <nav
           role="navigation"
           className={`siteNav ${this.state.navBarActiveClass}`}
@@ -57,8 +56,8 @@ const Header = class extends React.Component {
           <Link className="siteNav-item" to="/about-us">
             About Us
           </Link>
-          <Link className="siteNav-item" to="/blog">
-            Blog
+          <Link className="siteNav-item" to="/stories">
+            Stories
           </Link>
           <Link className="siteNav-item" to="/contribute">
             Contribute
@@ -69,13 +68,6 @@ const Header = class extends React.Component {
           <Link className="siteNav-item button" to="/">
             Get the App
           </Link>
-=======
-        <nav role="navigation" className={`siteNav ${this.state.navBarActiveClass}`}>
-          <Link className="siteNav-item" to="/about">About</Link>
-          <Link className="siteNav-item" to="/stories">Stories</Link>
-          <Link className="siteNav-item" to="/contribute">Contribute</Link>
-          <Link className="siteNav-item button" to="/">Get the App</Link>
->>>>>>> 3f73ef8... refactor(stories): changed blog language to stories
         </nav>
         {/* </div> */}
       </header>
