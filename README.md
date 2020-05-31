@@ -1,6 +1,6 @@
 # Mutual Aid - Resilience App Theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
@@ -134,6 +134,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sarahjagrowski"><img src="https://avatars0.githubusercontent.com/u/63767896?v=4" width="100px;" alt=""/><br /><sub><b>sarahjagrowski</b></sub></a><br /><a href="#design-sarahjagrowski" title="Design">🎨</a> <a href="#ideas-sarahjagrowski" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/sarahjoo"><img src="https://avatars1.githubusercontent.com/u/44788265?v=4" width="100px;" alt=""/><br /><sub><b>Sarah</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/commits?author=sarahjoo" title="Documentation">📖</a> <a href="#design-sarahjoo" title="Design">🎨</a> <a href="#ideas-sarahjoo" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-sarahjoo" title="Answering Questions">💬</a></td>
     <td align="center"><a href="http://marekdano.com"><img src="https://avatars1.githubusercontent.com/u/1914165?v=4" width="100px;" alt=""/><br /><sub><b>Marek Dano</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/commits?author=marekdano" title="Code">💻</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=marekdano" title="Documentation">📖</a> <a href="https://github.com/factn/resilience-landing-page/issues?q=author%3Amarekdano" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://amylo.ca"><img src="https://avatars3.githubusercontent.com/u/1828667?v=4" width="100px;" alt=""/><br /><sub><b>Amy</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/issues?q=author%3Aamylo" title="Bug reports">🐛</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=amylo" title="Code">💻</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=amylo" title="Documentation">📖</a> <a href="#ideas-amylo" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-amylo" title="Maintenance">🚧</a> <a href="#question-amylo" title="Answering Questions">💬</a> <a href="https://github.com/factn/resilience-landing-page/pulls?q=is%3Apr+reviewed-by%3Aamylo" title="Reviewed Pull Requests">👀</a> <a href="#security-amylo" title="Security">🛡️</a></td>
   </tr>
 </table>
 
