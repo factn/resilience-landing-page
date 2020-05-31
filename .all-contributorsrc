@@ -136,6 +136,22 @@
         "doc",
         "bug"
       ]
+    },
+    {
+      "login": "amylo",
+      "name": "Amy",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1828667?v=4",
+      "profile": "http://amylo.ca",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "ideas",
+        "maintenance",
+        "question",
+        "review",
+        "security"
+      ]
     }
   ],
   "contributorsPerLine": 7,
