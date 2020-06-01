@@ -152,6 +152,17 @@
         "review",
         "security"
       ]
+    },
+    {
+      "login": "JakeG-9191",
+      "name": "Jacob Garlick",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53546048?v=4",
+      "profile": "https://jacob-garlick.com/",
+      "contributions": [
+        "bug",
+        "test",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
