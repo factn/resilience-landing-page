@@ -71,7 +71,7 @@ const StoriesPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
-        )}
+        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
