@@ -52,6 +52,11 @@ const Footer = () => (
             Documentation
           </ExternalLink>
         </div>
+        <div className="siteFooter_section-item">
+          <Link className="inverse" to="/support">
+            Support
+          </Link>
+        </div>
       </div>
       <div className="siteFooter_section">
         <div className="caps siteFooter_section-title">Contact Us</div>
