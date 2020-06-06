@@ -44,3 +44,12 @@
 .featuredBlock-wrapper {
   background-image: linear-gradient($color-sky 70%, white 30%);
 }
+
+.centered {
+  margin: auto;
+  text-align: center;
+}
+
+.responsiveFlex {
+  @include responsiveFlex;
+}
