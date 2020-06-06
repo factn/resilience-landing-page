@@ -31,8 +31,8 @@ export const StoriesPostTemplate = ({
           <div className="tagList-wrapper">
             <h4>Tags</h4>
             <ul className="tagList">
-              {tags.map(tag => (
-                <li key={tag + `tag`}>
+              {tags.map((tag) => (
+                <li key={`${tag}tag`}>
                   <Link className="tag" to={`/tags/${kebabCase(tag)}/`}>
                     {tag}
                   </Link>
@@ -71,7 +71,7 @@ const StoriesPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
-        }
+        )}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

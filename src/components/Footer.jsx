@@ -63,8 +63,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="centered">
-      Open Source license -
-      {' '}
+      Open Source license -{' '}
       <ExternalLink className="inverse" href={EXTERNAL_LINKS.license}>
         licensed under GPL
       </ExternalLink>

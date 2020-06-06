@@ -9,12 +9,11 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     return <Img fluid={image.childImageSharp.fluid} alt={alt} />;
   }
 
-  if (!!childImageSharp) {
+  if (childImageSharp) {
     return <Img fluid={childImageSharp.fluid} alt={alt} />;
   }
 
-  if (!!image && typeof image === 'string')
-    return <img src={image} alt={alt} />;
+  if (!!image && typeof image === 'string') return <img src={image} alt={alt} />;
   return null;
 };
 

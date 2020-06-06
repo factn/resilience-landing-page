@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const Section = ({ row }) => (
-  <Fragment>
+  <>
     <section>
       <div className="siteContent">
         {row.map((item, i) => (
@@ -22,7 +22,7 @@ const Section = ({ row }) => (
         ))}
       </div>
     </section>
-  </Fragment>
+  </>
 );
 
 Section.propTypes = {

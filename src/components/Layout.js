@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import Header from './Header';
+import Contact from './Contact';
+import Footer from './Footer';
 import './scss/styles.scss';
 import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
@@ -10,7 +10,7 @@ import { withPrefix } from 'gatsby';
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <Fragment>
+    <>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <Contact />
       <Footer />
-    </Fragment>
+    </>
   );
 };
 
