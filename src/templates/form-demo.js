@@ -19,24 +19,32 @@ export const FormDemoTemplatePage = ({ title, content, contentComponent }) => {
           name="contact"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden">
+          <p className="hidden">
             <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
+              Don’t fill this out if you're human:
+              {' '}
+              <input name="bot-field" />
             </label>
           </p>
           <p>
             <label>
-              Name <input type="text" name="name" />
+              Name
+              {' '}
+              <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Email <input type="email" name="email" />
+              Email
+              {' '}
+              <input type="email" name="email" />
             </label>
           </p>
           <p>
             <label>
-              Text <input type="text" name="text" />
+              Text
+              {' '}
+              <input type="text" name="text" />
             </label>
           </p>
           <p>

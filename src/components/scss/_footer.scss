@@ -1,5 +1,20 @@
-.siteFooter-nav {
-  text-align: center;
-  padding: $gap 0;
-  margin-bottom: $gap;
+.siteFooter {
+  background-color: $bg-primary;
+  color: #fff;
+  padding-bottom: $gap;
+  padding-top: $gap;
+}
+
+.siteFooter_section {
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.siteFooter_section-title {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.siteFooter_section-item {
+  margin-top: 16px;
 }

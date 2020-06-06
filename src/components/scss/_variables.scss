@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 
-$max-width: 64rem;
+$max-width: 1024px;
 $gap: 1.5rem;
 $border-radius: 4px;
 
@@ -13,16 +13,25 @@ $color-grey: #C4C4C4;
 
 $box-shadow: 0px 6px 14px rgba($color-blue, 0.2);
 
+/* Theme variables */
+$bg-primary: #828282;
+$bg-secondary: #F2F2F2;
+$text-primary: #000;
+$text-secondary: rgba(0,0,0,0.5);
+
 
 // Global breakpoints based on the material-ui default theme
-// "xs": 360,
+// "xs": 400,
 // "sm": 600,
 // "md": 960,
 // "lg": 1280,
 // "xl": 1920
 
 @mixin media($size){
-  @if $size == sm {
+  @if $size == xs {
+    @media screen and (min-width:400px) { @content; }
+  }
+  @else if $size == sm {
     @media screen and (min-width:600px){ @content; }
   }
   @else if $size == md {

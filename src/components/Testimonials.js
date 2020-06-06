@@ -7,7 +7,11 @@ const Testimonials = ({ testimonials }) => (
       <article key={i} className="message">
         <div className="message-body">
           {testimonial.quote}
-          <cite> – {testimonial.author}</cite>
+          <cite>
+            {' '}
+            –
+            {testimonial.author}
+          </cite>
         </div>
       </article>
     ))}

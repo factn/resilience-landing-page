@@ -1,0 +1,11 @@
+@mixin responsiveFlex {
+    display: flex;
+
+    @include media(sm) {
+        flex-direction: column;
+    }
+
+    @include media(md) {
+        flex-direction: row;
+    }
+}
