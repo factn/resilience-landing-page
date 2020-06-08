@@ -20,7 +20,7 @@ Provide a description of the scope of work for this ticket. The more detail the 
 <!--
 Provide a link to mockup if available
 -->
-[Screenshot]()
+[Mockup]()
 
 
 <!--
