@@ -20,9 +20,10 @@ const Video = ({ title, url }) => (
         <div className="sectionHeader videoDescription">
           <h3>What Is Resilience?</h3>
           <p>
-            Sign up to make a request for a food box, small errand, or a
-            pharmacy pickup. A local coordinator will match you with a volunteer
-            who will take care of your need ASAP.
+            Description. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi.
           </p>
           <a
             href="http://example.com"
