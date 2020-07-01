@@ -38,6 +38,7 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm -rf .cache/* && gatsby clean",
+    "commit": "git cz",
     "start": "npm run develop",
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
@@ -53,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "git-cz": "^4.7.0",
     "prettier": "^1.15.3"
   },
   "config": {
