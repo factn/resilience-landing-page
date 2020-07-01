@@ -37,10 +37,7 @@ Start the server
 $ npm start
 ```
 
-Sometimes you have to run a fresh build
-```
-$ npm run clean && gatsby develop
-```
+Read more on our [CONTRIBUTING](https://github.com/factn/resilience-landing-page/blob/master/CONTRIBUTING.md)
 
 ## GraphQL
 
