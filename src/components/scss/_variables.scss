@@ -23,7 +23,7 @@ $text-secondary: rgba(0,0,0,0.5);
 // Global breakpoints based on the material-ui default theme
 // "xs": 400,
 // "sm": 600,
-// "md": 960,
+// "md": 1025, // changed from 960
 // "lg": 1280,
 // "xl": 1920
 
@@ -35,7 +35,7 @@ $text-secondary: rgba(0,0,0,0.5);
     @media screen and (min-width:600px){ @content; }
   }
   @else if $size == md {
-    @media screen and (min-width:960px){ @content; }
+    @media screen and (min-width:1025px){ @content; }
   }
   @else if $size == mdMax {
     @media screen and (max-width:960px){ @content; }
