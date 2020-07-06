@@ -3,6 +3,9 @@
 *:after {
   box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
 
 body {
   background-color: white;
