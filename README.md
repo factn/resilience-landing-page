@@ -1,6 +1,6 @@
 # Mutual Aid - Resilience App Theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
@@ -137,6 +137,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://amylo.ca"><img src="https://avatars3.githubusercontent.com/u/1828667?v=4" width="100px;" alt=""/><br /><sub><b>Amy</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/issues?q=author%3Aamylo" title="Bug reports">🐛</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=amylo" title="Code">💻</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=amylo" title="Documentation">📖</a> <a href="#ideas-amylo" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-amylo" title="Maintenance">🚧</a> <a href="#question-amylo" title="Answering Questions">💬</a> <a href="https://github.com/factn/resilience-landing-page/pulls?q=is%3Apr+reviewed-by%3Aamylo" title="Reviewed Pull Requests">👀</a> <a href="#security-amylo" title="Security">🛡️</a></td>
     <td align="center"><a href="https://jacob-garlick.com/"><img src="https://avatars1.githubusercontent.com/u/53546048?v=4" width="100px;" alt=""/><br /><sub><b>Jacob Garlick</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/issues?q=author%3AJakeG-9191" title="Bug reports">🐛</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=JakeG-9191" title="Tests">⚠️</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=JakeG-9191" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/chasekaylee"><img src="https://avatars2.githubusercontent.com/u/15622492?v=4" width="100px;" alt=""/><br /><sub><b>Chase Lee</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/commits?author=chasekaylee" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sd33m"><img src="https://avatars3.githubusercontent.com/u/15462970?v=4" width="100px;" alt=""/><br /><sub><b>sd33m</b></sub></a><br /><a href="#ideas-sd33m" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-sd33m" title="Answering Questions">💬</a> <a href="#a11y-sd33m" title="Accessibility">️️️️♿️</a></td>
   </tr>
 </table>
 
