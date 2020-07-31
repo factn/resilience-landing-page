@@ -193,6 +193,18 @@
         "question",
         "a11y"
       ]
+    },
+    {
+      "login": "courtbee",
+      "name": "Courtney Beadel",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1877927?v=4",
+      "profile": "https://dribbble.com/Courtface",
+      "contributions": [
+        "design",
+        "doc",
+        "ideas",
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,
