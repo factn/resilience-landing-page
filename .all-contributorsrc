@@ -172,6 +172,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "yoonahbae",
+      "name": "Yoonah Bae",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16281017?v=4",
+      "profile": "http://yoonah-bae.com",
+      "contributions": [
+        "design",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
