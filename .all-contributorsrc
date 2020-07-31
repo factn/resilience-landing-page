@@ -172,6 +172,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sd33m",
+      "name": "sd33m",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/15462970?v=4",
+      "profile": "https://github.com/sd33m",
+      "contributions": [
+        "ideas",
+        "question",
+        "a11y"
+      ]
     }
   ],
   "contributorsPerLine": 7,
