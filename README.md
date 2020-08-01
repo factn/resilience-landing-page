@@ -1,6 +1,6 @@
 # Mutual Aid - Resilience App Theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
@@ -142,6 +142,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/sd33m"><img src="https://avatars3.githubusercontent.com/u/15462970?v=4" width="100px;" alt=""/><br /><sub><b>sd33m</b></sub></a><br /><a href="#ideas-sd33m" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-sd33m" title="Answering Questions">💬</a> <a href="#a11y-sd33m" title="Accessibility">️️️️♿️</a></td>
     <td align="center"><a href="https://dribbble.com/Courtface"><img src="https://avatars3.githubusercontent.com/u/1877927?v=4" width="100px;" alt=""/><br /><sub><b>Courtney Beadel</b></sub></a><br /><a href="#design-courtbee" title="Design">🎨</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=courtbee" title="Documentation">📖</a> <a href="#ideas-courtbee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-courtbee" title="Answering Questions">💬</a></td>
+    <td align="center"><a href="https://azmainamin.github.io/"><img src="https://avatars1.githubusercontent.com/u/12126548?v=4" width="100px;" alt=""/><br /><sub><b>Azmain Amin</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/issues?q=author%3Aazmainamin" title="Bug reports">🐛</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=azmainamin" title="Code">💻</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=azmainamin" title="Documentation">📖</a> <a href="#ideas-azmainamin" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-azmainamin" title="Maintenance">🚧</a> <a href="#question-azmainamin" title="Answering Questions">💬</a> <a href="https://github.com/factn/resilience-landing-page/pulls?q=is%3Apr+reviewed-by%3Aazmainamin" title="Reviewed Pull Requests">👀</a> <a href="#security-azmainamin" title="Security">🛡️</a></td>
   </tr>
 </table>
 
