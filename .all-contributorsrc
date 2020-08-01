@@ -205,6 +205,22 @@
         "ideas",
         "question"
       ]
+    },
+    {
+      "login": "azmainamin",
+      "name": "Azmain Amin",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12126548?v=4",
+      "profile": "https://azmainamin.github.io/",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "ideas",
+        "maintenance",
+        "question",
+        "review",
+        "security"
+      ]
     }
   ],
   "contributorsPerLine": 7,
