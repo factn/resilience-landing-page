@@ -1,6 +1,6 @@
 # Mutual Aid - Resilience App Theme
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
@@ -138,7 +138,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://jacob-garlick.com/"><img src="https://avatars1.githubusercontent.com/u/53546048?v=4" width="100px;" alt=""/><br /><sub><b>Jacob Garlick</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/issues?q=author%3AJakeG-9191" title="Bug reports">🐛</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=JakeG-9191" title="Tests">⚠️</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=JakeG-9191" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/chasekaylee"><img src="https://avatars2.githubusercontent.com/u/15622492?v=4" width="100px;" alt=""/><br /><sub><b>Chase Lee</b></sub></a><br /><a href="https://github.com/factn/resilience-landing-page/commits?author=chasekaylee" title="Code">💻</a></td>
     <td align="center"><a href="http://yoonah-bae.com"><img src="https://avatars2.githubusercontent.com/u/16281017?v=4" width="100px;" alt=""/><br /><sub><b>Yoonah Bae</b></sub></a><br /><a href="#design-yoonahbae" title="Design">🎨</a> <a href="#ideas-yoonahbae" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+  <tr>
     <td align="center"><a href="https://github.com/sd33m"><img src="https://avatars3.githubusercontent.com/u/15462970?v=4" width="100px;" alt=""/><br /><sub><b>sd33m</b></sub></a><br /><a href="#ideas-sd33m" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-sd33m" title="Answering Questions">💬</a> <a href="#a11y-sd33m" title="Accessibility">️️️️♿️</a></td>
+    <td align="center"><a href="https://dribbble.com/Courtface"><img src="https://avatars3.githubusercontent.com/u/1877927?v=4" width="100px;" alt=""/><br /><sub><b>Courtney Beadel</b></sub></a><br /><a href="#design-courtbee" title="Design">🎨</a> <a href="https://github.com/factn/resilience-landing-page/commits?author=courtbee" title="Documentation">📖</a> <a href="#ideas-courtbee" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-courtbee" title="Answering Questions">💬</a></td>
   </tr>
 </table>
 
