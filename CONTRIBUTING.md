@@ -5,11 +5,11 @@ If you are reading this, there is a high chance you are interested in contributi
 
 ## :deciduous_tree: Forks and Branching model
 
-We work off of Main / Fork repository model. Before you get started, you should [fork](https://github.com/factn/resilience-landing-page/fork) the project from the main repository and then **clone** the project to your machine.
+We work off of Main / Fork repository model. Before you get started, you should [fork](https://github.com/factn/resilience-landing-page/fork) the project from the main repository, you will work with this fork as you contribute to the project.
 
-While working with the Main / Fork repository model, you may find the following article extremely helpful for keeping your fork up to date and submitting pull requests, [GitHub-Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
+While working with the Main / Fork repository model, you may find the following article **extremely helpful** for keeping your fork up to date and submitting pull requests, [GitHub-Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962).
 
-Once you have cloned your fork, you are ready to get set up.
+Once you have cloned your own fork, you are ready to get set up.
 
 While working locally, you will want to create a branch to track your work. Our branch naming should try to follow the following pattern:
 

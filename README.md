@@ -1,12 +1,14 @@
 # Mutual Aid - Resilience App Theme
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e1d80024-6417-4af4-ad3d-0ee57410366c/deploy-status)](https://app.netlify.com/sites/resilienceapp-theme/deploys)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 
 ## Prerequisites
 
@@ -16,33 +18,36 @@
 
 ## Get started
 
-Clone the repository
+Fork the repository
+
 ```
 $ cd <sites-folder>
-$ git clone https://github.com/factn/resilienceapp_theme.git
+$ git clone <your-forked-repo>
 ```
 
 Make sure you have Gatsby installed globally
+
 ```
 $ npm i -g gatsby
 ```
 
 Install your packages
+
 ```
 $ npm install
 ```
 
 Start the server
+
 ```
 $ npm start
 ```
 
-Read more on our [CONTRIBUTING](https://github.com/factn/resilience-landing-page/blob/master/CONTRIBUTING.md)
+Read more about contributing and keeping your fork up to date on our [CONTRIBUTING](https://github.com/factn/resilience-landing-page/blob/master/CONTRIBUTING.md)
 
 ## GraphQL
 
 http://localhost:8000/__graphql
-
 
 **Note:** This theme uses [Gatsby v2](https://www.gatsbyjs.org/stories/2018-09-17-gatsby-v2/) and [Netlify CMS](https://www.netlifycms.org)
 
@@ -63,34 +68,36 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
 - ..and more
 
-
 ### Media Libraries (installed, but optional)
 
 Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
 
 ```javascript
-import CMS from 'netlify-cms-app'
+import CMS from 'netlify-cms-app';
 // import uploadcare from 'netlify-cms-media-library-uploadcare'
 // import cloudinary from 'netlify-cms-media-library-cloudinary'
 
-import AboutUsPagePreview from './preview-templates/AboutUsPagePreview'
-import StoriesPostPreview from './preview-templates/StoriesPostPreview'
-import IndexPagePreview from './preview-templates/IndexPagePreview'
+import AboutUsPagePreview from './preview-templates/AboutUsPagePreview';
+import StoriesPostPreview from './preview-templates/StoriesPostPreview';
+import IndexPagePreview from './preview-templates/IndexPagePreview';
 
 // CMS.registerMediaLibrary(uploadcare);
 // CMS.registerMediaLibrary(cloudinary);
 
-CMS.registerPreviewTemplate('index', IndexPagePreview)
-CMS.registerPreviewTemplate('about-us', AboutUsPagePreview)
-CMS.registerPreviewTemplate('stories', StoriesPostPreview)
+CMS.registerPreviewTemplate('index', IndexPagePreview);
+CMS.registerPreviewTemplate('about-us', AboutUsPagePreview);
+CMS.registerPreviewTemplate('stories', StoriesPostPreview);
 ```
 
 Note: Don't forget to also remove them from `package.json` and `yarn.lock` / `package-lock.json` using `yarn` or `npm`. During the build netlify-cms-app will bundle the media libraries as well, having them removed will save you build time.
 Example:
+
 ```
 yarn remove netlify-cms-media-library-uploadcare
 ```
+
 OR
+
 ```
 yarn remove netlify-cms-media-library-cloudinary
 ```
@@ -148,6 +155,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
