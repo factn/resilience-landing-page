@@ -35,7 +35,7 @@ section:
       button: Volunteer
       url: https://example.com
 contribute:
-  heading: Other ways to get get involved
+  heading: Other ways to get involved
   channel:
     - image: /img/github.png
       heading: Developers
