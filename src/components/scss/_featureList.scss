@@ -1,0 +1,31 @@
+.featureList_container {
+  border: $color-grey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 1.5em;
+  height: 100%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 90%;
+    list-style: none;
+    margin: auto;
+    padding: 0px;
+
+    li::before {
+      content: "\2713";
+      color: $bg-primary;
+      margin: 0 0.5em;
+    }
+  }
+}
+
+.featureList_item {
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 40px;
+}
