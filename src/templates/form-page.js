@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Grid from '@material-ui/core/Grid';
@@ -14,18 +14,44 @@ export const FormPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content;
 
+  const recap = useMemo(() => {
+    if (features.length > 0) {
+      if (content) {
+        return (
+          <Grid container spacing={5} alignItems="center">
+            <Grid item md={7} xs={12}>
+              <h2>{title}</h2>
+              <PageContent className="content" content={content} />
+            </Grid>
+            <Grid item md={5} xs={12}>
+              <FeatureList items={features} />
+            </Grid>
+          </Grid>
+        );
+      } else {
+        return (
+          <div>
+            <h2>{title}</h2>
+            <FeatureList items={features} />
+          </div>
+        );
+      }
+    } else if (content) {
+      return (
+        <div>
+          <h2>{title}</h2>
+          <PageContent className="content" content={content} />
+        </div>
+      );
+    }
+
+    return <h2>{title}</h2>;
+  }, [title, features, content])
+
   return (
     <div className="siteContent">
       <div className="siteContent-inner">
-        <Grid container spacing={5} alignItems="center">
-          <Grid item md={7} xs={12}>
-            <h2>{title}</h2>
-            <PageContent className="content" content={content} />
-          </Grid>
-          <Grid item md={5} xs={12}>
-            <FeatureList items={features} />
-          </Grid>
-        </Grid>
+        {recap}
       </div>
     </div>
   );
@@ -37,6 +63,11 @@ FormPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   features: PropTypes.arrayOf(PropTypes.string),
 };
+
+FormPageTemplate.defaultProps = {
+  content: "",
+  features: [],
+}
 
 const FormPage = ({ data }) => {
   const { markdownRemark: post } = data;
