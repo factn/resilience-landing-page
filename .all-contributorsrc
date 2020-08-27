@@ -221,6 +221,15 @@
         "review",
         "security"
       ]
+    },
+    {
+      "login": "jessdwitch",
+      "name": "Jessica Ellis",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2289086?v=4",
+      "profile": "http://datawitch.tech",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
