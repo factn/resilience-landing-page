@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import logo from '../img/svg-logo-text.svg';
+import logo from '../img/resilience-logo.png';
 
 const Header = class extends React.Component {
   constructor(props) {

@@ -19,8 +19,6 @@ export const IndexPageTemplate = ({
   team,
 }) => (
   <>
-    <Hero title={hero.title} button={hero.button} />
-    <Mission step={mission.step} />
     <Video title={video.title} url={video.url} />
     <Section row={section.row} />
     <Contribute heading={contribute.heading} channel={contribute.channel} />

@@ -16,8 +16,8 @@ mission:
     - image: /img/mission-3.png
       heading: To those in need during the Covid-19 pandemic and beyond.
 video:
-  title: CoronaDonor.org Introduction
-  url: https://www.youtube.com/embed/ia7h5sRIe5U
+  title: Resilience Introduction
+  url: https://www.youtube.com/embed/XTbr3lOTVSk
 section:
   row:
     - image: /img/placeholder.png
