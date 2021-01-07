@@ -4,6 +4,7 @@ import Header from './Header';
 import Contact from './Contact';
 import Footer from './Footer';
 import './scss/styles.scss';
+import './scss/assets/material-kit-pro-react.scss'
 import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
 
@@ -51,7 +52,6 @@ const Layout = ({ children }) => {
       </Helmet>
       <Header />
       <main>{children}</main>
-      <Contact />
       <Footer />
     </>
   );

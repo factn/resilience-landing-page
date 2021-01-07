@@ -68,7 +68,7 @@ const Header = class extends React.Component {
           <Link className="siteNav-item" to="/stories">
             Stories
           </Link>
-          <Link className="siteNav-item button" to="/">
+          <Link className="siteNav-item button" to="/get-resilience">
             Get Resilience
           </Link>
         </nav>

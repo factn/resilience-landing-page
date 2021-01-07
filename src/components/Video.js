@@ -20,17 +20,14 @@ const Video = ({ title, url }) => (
         <div className="sectionHeader videoDescription">
           <h3>What Is Resilience?</h3>
           <p>
-            Description. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi.
+            The Resilience App is an easy to use, adaptable, open-source system made for mutual aid groups. We want to help as many mutual aid groups as we can and want to hear from you what your needs are!
           </p>
           <a
-            href="http://example.com"
+            href="/get-resilience"
             className="button primary"
             id="videoButton"
           >
-            Get Resilience
+            Get Resilience For Your Group
           </a>
         </div>
       </div>

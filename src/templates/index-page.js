@@ -3,28 +3,29 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import Mission from '../components/Mission';
+//import Hero from '../components/Hero';
+//import Mission from '../components/Mission';
+import ProductFeatures from '../components/ProductFeatures';
 import Video from '../components/Video';
 import Section from '../components/Section';
 import Contribute from '../components/Contribute';
 import Team from '../components/Team';
 
 export const IndexPageTemplate = ({
-  hero,
   video,
-  mission,
+  productFeatures,
   section,
   contribute,
   team,
 }) => (
   <>
     <Video title={video.title} url={video.url} />
-    <Section row={section.row} />
-    <Contribute heading={contribute.heading} channel={contribute.channel} />
-    <Team heading={team.heading} text={team.text} member={team.member} />
+    <ProductFeatures  />
   </>
 );
+
+// <Contribute heading={contribute.heading} channel={contribute.channel} />
+// <Team heading={team.heading} text={team.text} member={team.member} />
 
 IndexPageTemplate.propTypes = {
   hero: PropTypes.shape({

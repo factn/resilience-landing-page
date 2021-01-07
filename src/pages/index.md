@@ -16,8 +16,8 @@ mission:
     - image: /img/mission-3.png
       heading: To those in need during the Covid-19 pandemic and beyond.
 video:
-  title: Resilience Introduction
-  url: https://www.youtube.com/embed/XTbr3lOTVSk
+  title: What is Resilience ?
+  url: https://www.youtube.com/embed/yqWX86uT5jM
 section:
   row:
     - image: /img/placeholder.png
