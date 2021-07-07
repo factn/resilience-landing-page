@@ -6,6 +6,8 @@ export const EXTERNAL_LINKS = {
   join: 'https://app.gitbook.com/@mutualaidworld/s/docs/local-resilience-app',
   license: 'https://github.com/factn/resilience-app/blob/master/LICENSE',
   slack: 'https://app.slack.com/client/T010BELED7Z',
+  facebook:'',
+  email:''
 };
 
 const constants = {
