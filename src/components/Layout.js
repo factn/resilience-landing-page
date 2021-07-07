@@ -50,9 +50,11 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <Header />
-      <main>{children}</main>
-      <Contact />
-      <Footer />
+      <div className="app-holder">
+        <main className="main-content">{children}</main>
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 };

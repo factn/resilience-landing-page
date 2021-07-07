@@ -4,10 +4,18 @@
   padding-bottom: $gap;
   padding-top: $gap;
 }
-
+.responsiveFlex{
+  flex-wrap: wrap;
+}
 .siteFooter_section {
   margin: 0 auto;
   margin-bottom: 1.5em;
+  padding: 15px;
+}
+
+.flex-links{
+ display: flex;
+ flex-wrap: wrap;
 }
 
 .siteFooter_section-title {
@@ -17,4 +25,26 @@
 
 .siteFooter_section-item {
   margin-top: 16px;
+}
+.logo{
+  width: 200px;
+}
+.flex-icon-container{
+  display:flex;
+  flex-direction: row;
+   .inverse{
+    transition: .3s ease-in-out;
+   }
+  .inverse:hover{
+     transition: .3s ease-in-out;
+     opacity: 0.5;
+  }
+}
+.quote{
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  i{
+    letter-spacing: 1px;
+  }
 }

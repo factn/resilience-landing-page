@@ -2,6 +2,16 @@ import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../img/resilience-logo.png';
 
+
+const navItems = [
+  {link:'/',name:'Home'},
+  {link:'/partners',name:'Partners'},
+  {link:'/contribute',name:'Contribute'},
+  {link:'/about-us',name:'About Us'},
+  {link:'/stories',name:'Stories'},
+  {link:'/',name:'Get Resilience'},
+]
+
 const Header = class extends React.Component {
   constructor(props) {
     super(props);
@@ -34,6 +44,7 @@ const Header = class extends React.Component {
   render() {
     return (
       <header role="banner" className="siteHeader">
+
         <Link to="/" title="Mutual Aid homepage">
           <img
             className="siteLogo"
@@ -43,36 +54,46 @@ const Header = class extends React.Component {
         </Link>
 
         {/* Hamburger menu */}
-        {/* <div
+
+        <div
             className={`navbar-burger burger ${this.state.navBarActiveClass}`}
             data-target="navMenu"
             onClick={() => this.toggleHamburger()}
-          > */}
+        > 
+                <span id="bar1"></span>
+                <span id="bar2"></span>
+                <span id="bar3"></span>
 
-        <nav
-          role="navigation"
-          className={`siteNav ${this.state.navBarActiveClass}`}
-        >
-          <Link className="siteNav-item" to="/">
-            Home
-          </Link>
-          <Link className="siteNav-item" to="/partners">
-            Partners
-          </Link>
-          <Link className="siteNav-item" to="/contribute">
-            Contribute
-          </Link>
-          <Link className="siteNav-item" to="/about-us">
-            About Us
-          </Link>
-          <Link className="siteNav-item" to="/stories">
-            Stories
-          </Link>
-          <Link className="siteNav-item button" to="/">
-            Get Resilience
-          </Link>
-        </nav>
-        {/* </div> */}
+            <nav
+              role="navigation"
+              className={`navbar ${this.state.navBarActiveClass}`}
+            >
+              
+              <div className={`dropDownMenu`}>
+
+                  { navItems && navItems.map(item => (
+                   <Link className={item.name === 'Get Resilience' ? 'siteNav-item button primary' : 'siteNav-item'} to={item.link}>
+                       {item.name}
+                  </Link>
+                  )) }
+
+              </div>
+                 
+            </nav>
+         </div> 
+
+            <nav
+              role="navigation"
+              className={`siteNav`}
+            >
+                  { navItems && navItems.map(item => (
+                   <Link className={item.name === 'Get Resilience' ? 'siteNav-item button primary' : 'siteNav-item'} to={item.link}>
+                       {item.name}
+                  </Link>
+                  )) }
+
+           </nav>
+
       </header>
     );
   }

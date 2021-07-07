@@ -14,6 +14,12 @@
   padding: $gap 0;
 }
 
+.app-holder{
+  position: absolute;
+  width: 100%;
+  top: 82px;
+}
+
 .sectionBlock {
   margin: $gap 0;
   @include media(sm){
